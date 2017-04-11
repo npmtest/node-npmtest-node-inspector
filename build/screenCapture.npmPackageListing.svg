@@ -1,0 +1,614 @@
+<svg height="9774" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="9774" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  0.  2017-04-11 05:27:58 +0000  7892086 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-11 05:27:58 +0000     1148 bytes  CONTRIBUTING.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-11 05:27:58 +0000    25660 bytes  ChangeLog.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-11 05:27:58 +0000     1282 bytes  LICENSE</tspan>
+<tspan x="10" y="90">  4.  2017-04-11 05:27:58 +0000    14689 bytes  README.md</tspan>
+<tspan x="10" y="106">  5.  2017-04-11 05:27:58 +0000     1453 bytes  bin/inspector.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-11 05:27:58 +0000     5300 bytes  bin/node-debug.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-11 05:27:58 +0000     1887 bytes  bin/run-repl.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-11 05:27:58 +0000     1986 bytes  docs/embedding.md</tspan>
+<tspan x="10" y="170">  9.  2017-04-11 05:27:58 +0000     1517 bytes  front-end-node/Images/favicon.png</tspan>
+<tspan x="10" y="186"> 10.  2017-04-11 05:27:58 +0000  1174954 bytes  front-end-node/Images/src/favicon.eps</tspan>
+<tspan x="10" y="202"> 11.  2017-04-11 05:27:58 +0000     8120 bytes  front-end-node/NodeInspectorOverrides.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-11 05:27:58 +0000     1215 bytes  front-end-node/console/ConsoleExtentions.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-11 05:27:58 +0000      105 bytes  front-end-node/console/module.json</tspan>
+<tspan x="10" y="250"> 14.  2017-04-11 05:27:58 +0000      526 bytes  front-end-node/inspector.json</tspan>
+<tspan x="10" y="266"> 15.  2017-04-11 05:27:58 +0000     3319 bytes  front-end-node/main/MainOverrides.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-11 05:27:58 +0000       98 bytes  front-end-node/main/module.json</tspan>
+<tspan x="10" y="298"> 17.  2017-04-11 05:27:58 +0000      106 bytes  front-end-node/module.json</tspan>
+<tspan x="10" y="314"> 18.  2017-04-11 05:27:58 +0000      830 bytes  front-end-node/network/NetworkPanel.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-11 05:27:58 +0000      100 bytes  front-end-node/network/module.json</tspan>
+<tspan x="10" y="346"> 20.  2017-04-11 05:27:58 +0000      821 bytes  front-end-node/profiler/SaveOverrides.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-11 05:27:58 +0000      102 bytes  front-end-node/profiler/module.json</tspan>
+<tspan x="10" y="378"> 22.  2017-04-11 05:27:58 +0000      830 bytes  front-end-node/protocol.json</tspan>
+<tspan x="10" y="394"> 23.  2017-04-11 05:27:58 +0000      212 bytes  front-end-node/settings/SettingsScreenOverrides.\</tspan>
+<tspan x="10" y="410">css</tspan>
+<tspan x="10" y="426"> 24.  2017-04-11 05:27:58 +0000      967 bytes  front-end-node/settings/SettingsScreenOverrides.\</tspan>
+<tspan x="10" y="442">js</tspan>
+<tspan x="10" y="458"> 25.  2017-04-11 05:27:58 +0000      178 bytes  front-end-node/settings/module.json</tspan>
+<tspan x="10" y="474"> 26.  2017-04-11 05:27:58 +0000     2263 bytes  front-end-node/sources/SourcesOverrides.js</tspan>
+<tspan x="10" y="490"> 27.  2017-04-11 05:27:58 +0000      104 bytes  front-end-node/sources/module.json</tspan>
+<tspan x="10" y="506"> 28.  2017-04-11 05:27:58 +0000      935 bytes  front-end/Images/applicationCache.png</tspan>
+<tspan x="10" y="522"> 29.  2017-04-11 05:27:58 +0000      216 bytes  front-end/Images/back.png</tspan>
+<tspan x="10" y="538"> 30.  2017-04-11 05:27:58 +0000      154 bytes  front-end/Images/breakpoint.png</tspan>
+<tspan x="10" y="554"> 31.  2017-04-11 05:27:58 +0000      157 bytes  front-end/Images/breakpointConditional.png</tspan>
+<tspan x="10" y="570"> 32.  2017-04-11 05:27:58 +0000      230 bytes  front-end/Images/breakpointConditional_2x.png</tspan>
+<tspan x="10" y="586"> 33.  2017-04-11 05:27:58 +0000      228 bytes  front-end/Images/breakpoint_2x.png</tspan>
+<tspan x="10" y="602"> 34.  2017-04-11 05:27:58 +0000       82 bytes  front-end/Images/checker.png</tspan>
+<tspan x="10" y="618"> 35.  2017-04-11 05:27:58 +0000      131 bytes  front-end/Images/chromeDisabledSelect.png</tspan>
+<tspan x="10" y="634"> 36.  2017-04-11 05:27:58 +0000      125 bytes  front-end/Images/chromeDisabledSelect_2x.png</tspan>
+<tspan x="10" y="650"> 37.  2017-04-11 05:27:58 +0000    16248 bytes  front-end/Images/chromeLeft.png</tspan>
+<tspan x="10" y="666"> 38.  2017-04-11 05:27:58 +0000      438 bytes  front-end/Images/chromeMiddle.png</tspan>
+<tspan x="10" y="682"> 39.  2017-04-11 05:27:58 +0000     4888 bytes  front-end/Images/chromeRight.png</tspan>
+<tspan x="10" y="698"> 40.  2017-04-11 05:27:58 +0000      139 bytes  front-end/Images/chromeSelect.png</tspan>
+<tspan x="10" y="714"> 41.  2017-04-11 05:27:58 +0000      122 bytes  front-end/Images/chromeSelect_2x.png</tspan>
+<tspan x="10" y="730"> 42.  2017-04-11 05:27:58 +0000     2117 bytes  front-end/Images/cookie.png</tspan>
+<tspan x="10" y="746"> 43.  2017-04-11 05:27:58 +0000     1011 bytes  front-end/Images/database.png</tspan>
+<tspan x="10" y="762"> 44.  2017-04-11 05:27:58 +0000      301 bytes  front-end/Images/databaseTable.png</tspan>
+<tspan x="10" y="778"> 45.  2017-04-11 05:27:58 +0000      109 bytes  front-end/Images/deleteIcon.png</tspan>
+<tspan x="10" y="794"> 46.  2017-04-11 05:27:58 +0000      326 bytes  front-end/Images/domain.png</tspan>
+<tspan x="10" y="810"> 47.  2017-04-11 05:27:58 +0000      109 bytes  front-end/Images/errorWave.png</tspan>
+<tspan x="10" y="826"> 48.  2017-04-11 05:27:58 +0000      185 bytes  front-end/Images/errorWave_2x.png</tspan>
+<tspan x="10" y="842"> 49.  2017-04-11 05:27:58 +0000     1118 bytes  front-end/Images/fileSystem.png</tspan>
+<tspan x="10" y="858"> 50.  2017-04-11 05:27:58 +0000      214 bytes  front-end/Images/forward.png</tspan>
+<tspan x="10" y="874"> 51.  2017-04-11 05:27:58 +0000      356 bytes  front-end/Images/frame.png</tspan>
+<tspan x="10" y="890"> 52.  2017-04-11 05:27:58 +0000       95 bytes  front-end/Images/graphLabelCalloutLeft.png</tspan>
+<tspan x="10" y="906"> 53.  2017-04-11 05:27:58 +0000       96 bytes  front-end/Images/graphLabelCalloutRight.png</tspan>
+<tspan x="10" y="922"> 54.  2017-04-11 05:27:58 +0000     1570 bytes  front-end/Images/indexedDB.png</tspan>
+<tspan x="10" y="938"> 55.  2017-04-11 05:27:58 +0000      808 bytes  front-end/Images/indexedDBIndex.png</tspan>
+<tspan x="10" y="954"> 56.  2017-04-11 05:27:58 +0000      778 bytes  front-end/Images/indexedDBObjectStore.png</tspan>
+<tspan x="10" y="970"> 57.  2017-04-11 05:27:58 +0000      972 bytes  front-end/Images/localStorage.png</tspan>
+<tspan x="10" y="986"> 58.  2017-04-11 05:27:58 +0000      725 bytes  front-end/Images/navigationControls.png</tspan>
+<tspan x="10" y="1002"> 59.  2017-04-11 05:27:58 +0000     1525 bytes  front-end/Images/navigationControls_2x.png</tspan>
+<tspan x="10" y="1018"> 60.  2017-04-11 05:27:58 +0000      478 bytes  front-end/Images/paneAddButtons.png</tspan>
+<tspan x="10" y="1034"> 61.  2017-04-11 05:27:58 +0000      436 bytes  front-end/Images/paneElementStateButtons.png</tspan>
+<tspan x="10" y="1050"> 62.  2017-04-11 05:27:58 +0000      586 bytes  front-end/Images/paneFilterButtons.png</tspan>
+<tspan x="10" y="1066"> 63.  2017-04-11 05:27:58 +0000      743 bytes  front-end/Images/paneRefreshButtons.png</tspan>
+<tspan x="10" y="1082"> 64.  2017-04-11 05:27:58 +0000      382 bytes  front-end/Images/popoverArrows.png</tspan>
+<tspan x="10" y="1098"> 65.  2017-04-11 05:27:58 +0000     1464 bytes  front-end/Images/popoverBackground.png</tspan>
+<tspan x="10" y="1114"> 66.  2017-04-11 05:27:58 +0000     1369 bytes  front-end/Images/profileGroupIcon.png</tspan>
+<tspan x="10" y="1130"> 67.  2017-04-11 05:27:58 +0000     1215 bytes  front-end/Images/profileIcon.png</tspan>
+<tspan x="10" y="1146"> 68.  2017-04-11 05:27:58 +0000      489 bytes  front-end/Images/profileSmallIcon.png</tspan>
+<tspan x="10" y="1162"> 69.  2017-04-11 05:27:58 +0000      159 bytes  front-end/Images/radioDot.png</tspan>
+<tspan x="10" y="1178"> 70.  2017-04-11 05:27:58 +0000     1005 bytes  front-end/Images/resourceCSSIcon.png</tspan>
+<tspan x="10" y="1194"> 71.  2017-04-11 05:27:58 +0000      951 bytes  front-end/Images/resourceDocumentIcon.png</tspan>
+<tspan x="10" y="1210"> 72.  2017-04-11 05:27:58 +0000      141 bytes  front-end/Images/resourceDocumentIconSmall.png</tspan>
+<tspan x="10" y="1226"> 73.  2017-04-11 05:27:58 +0000      787 bytes  front-end/Images/resourceJSIcon.png</tspan>
+<tspan x="10" y="1242"> 74.  2017-04-11 05:27:58 +0000      295 bytes  front-end/Images/resourcePlainIcon.png</tspan>
+<tspan x="10" y="1258"> 75.  2017-04-11 05:27:58 +0000      114 bytes  front-end/Images/resourcePlainIconSmall.png</tspan>
+<tspan x="10" y="1274"> 76.  2017-04-11 05:27:58 +0000     1403 bytes  front-end/Images/resourcesTimeGraphIcon.png</tspan>
+<tspan x="10" y="1290"> 77.  2017-04-11 05:27:58 +0000      523 bytes  front-end/Images/responsiveDesign.png</tspan>
+<tspan x="10" y="1306"> 78.  2017-04-11 05:27:58 +0000     1010 bytes  front-end/Images/responsiveDesign_2x.png</tspan>
+<tspan x="10" y="1322"> 79.  2017-04-11 05:27:58 +0000       96 bytes  front-end/Images/searchNext.png</tspan>
+<tspan x="10" y="1338"> 80.  2017-04-11 05:27:58 +0000       91 bytes  front-end/Images/searchPrev.png</tspan>
+<tspan x="10" y="1354"> 81.  2017-04-11 05:27:58 +0000      991 bytes  front-end/Images/sessionStorage.png</tspan>
+<tspan x="10" y="1370"> 82.  2017-04-11 05:27:58 +0000      540 bytes  front-end/Images/settingsListRemove.png</tspan>
+<tspan x="10" y="1386"> 83.  2017-04-11 05:27:58 +0000      741 bytes  front-end/Images/settingsListRemove_2x.png</tspan>
+<tspan x="10" y="1402"> 84.  2017-04-11 05:27:58 +0000      518 bytes  front-end/Images/src/breakpoint.svg</tspan>
+<tspan x="10" y="1418"> 85.  2017-04-11 05:27:58 +0000      518 bytes  front-end/Images/src/breakpointConditional.svg</tspan>
+<tspan x="10" y="1434"> 86.  2017-04-11 05:27:58 +0000     2243 bytes  front-end/Images/src/errorWave.svg</tspan>
+<tspan x="10" y="1450"> 87.  2017-04-11 05:27:58 +0000      385 bytes  front-end/Images/src/optimize_png.hashes</tspan>
+<tspan x="10" y="1466"> 88.  2017-04-11 05:27:58 +0000     1823 bytes  front-end/Images/src/responsiveDesign.svg</tspan>
+<tspan x="10" y="1482"> 89.  2017-04-11 05:27:58 +0000     1148 bytes  front-end/Images/src/settingsListRemove.svg</tspan>
+<tspan x="10" y="1498"> 90.  2017-04-11 05:27:58 +0000    31259 bytes  front-end/Images/src/statusbarButtonGlyphs.svg</tspan>
+<tspan x="10" y="1514"> 91.  2017-04-11 05:27:58 +0000      385 bytes  front-end/Images/src/svg2png.hashes</tspan>
+<tspan x="10" y="1530"> 92.  2017-04-11 05:27:58 +0000     6769 bytes  front-end/Images/statusbarButtonGlyphs.png</tspan>
+<tspan x="10" y="1546"> 93.  2017-04-11 05:27:58 +0000    16026 bytes  front-end/Images/statusbarButtonGlyphs_2x.png</tspan>
+<tspan x="10" y="1562"> 94.  2017-04-11 05:27:58 +0000       90 bytes  front-end/Images/statusbarResizerHorizontal.png</tspan>
+<tspan x="10" y="1578"> 95.  2017-04-11 05:27:58 +0000       92 bytes  front-end/Images/statusbarResizerVertical.png</tspan>
+<tspan x="10" y="1594"> 96.  2017-04-11 05:27:58 +0000      525 bytes  front-end/Images/thumbActiveHoriz.png</tspan>
+<tspan x="10" y="1610"> 97.  2017-04-11 05:27:58 +0000      512 bytes  front-end/Images/thumbActiveVert.png</tspan>
+<tspan x="10" y="1626"> 98.  2017-04-11 05:27:58 +0000      526 bytes  front-end/Images/thumbHoriz.png</tspan>
+<tspan x="10" y="1642"> 99.  2017-04-11 05:27:58 +0000      524 bytes  front-end/Images/thumbHoverHoriz.png</tspan>
+<tspan x="10" y="1658">100.  2017-04-11 05:27:58 +0000      511 bytes  front-end/Images/thumbHoverVert.png</tspan>
+<tspan x="10" y="1674">101.  2017-04-11 05:27:58 +0000      515 bytes  front-end/Images/thumbVert.png</tspan>
+<tspan x="10" y="1690">102.  2017-04-11 05:27:58 +0000      228 bytes  front-end/Images/toolbarItemSelected.png</tspan>
+<tspan x="10" y="1706">103.  2017-04-11 05:27:58 +0000      271 bytes  front-end/Images/touchCursor.png</tspan>
+<tspan x="10" y="1722">104.  2017-04-11 05:27:58 +0000      518 bytes  front-end/Images/touchCursor_2x.png</tspan>
+<tspan x="10" y="1738">105.  2017-04-11 05:27:58 +0000      533 bytes  front-end/Images/transformControls.png</tspan>
+<tspan x="10" y="1754">106.  2017-04-11 05:27:58 +0000     1038 bytes  front-end/Images/transformControls_2x.png</tspan>
+<tspan x="10" y="1770">107.  2017-04-11 05:27:58 +0000      163 bytes  front-end/OWNERS</tspan>
+<tspan x="10" y="1786">108.  2017-04-11 05:27:58 +0000    28314 bytes  front-end/Runtime.js</tspan>
+<tspan x="10" y="1802">109.  2017-04-11 05:27:58 +0000    41899 bytes  front-end/UglifyJS/parse-js.js</tspan>
+<tspan x="10" y="1818">110.  2017-04-11 05:27:58 +0000     4215 bytes  front-end/audits/AuditCategories.js</tspan>
+<tspan x="10" y="1834">111.  2017-04-11 05:27:58 +0000     2011 bytes  front-end/audits/AuditCategory.js</tspan>
+<tspan x="10" y="1850">112.  2017-04-11 05:27:58 +0000     6060 bytes  front-end/audits/AuditController.js</tspan>
+<tspan x="10" y="1866">113.  2017-04-11 05:27:58 +0000     7906 bytes  front-end/audits/AuditExtensionCategory.js</tspan>
+<tspan x="10" y="1882">114.  2017-04-11 05:27:58 +0000     4590 bytes  front-end/audits/AuditFormatters.js</tspan>
+<tspan x="10" y="1898">115.  2017-04-11 05:27:58 +0000    13457 bytes  front-end/audits/AuditLauncherView.js</tspan>
+<tspan x="10" y="1914">116.  2017-04-11 05:27:58 +0000     5206 bytes  front-end/audits/AuditResultView.js</tspan>
+<tspan x="10" y="1930">117.  2017-04-11 05:27:58 +0000    60168 bytes  front-end/audits/AuditRules.js</tspan>
+<tspan x="10" y="1946">118.  2017-04-11 05:27:58 +0000    15949 bytes  front-end/audits/AuditsPanel.js</tspan>
+<tspan x="10" y="1962">119.  2017-04-11 05:27:58 +0000     5783 bytes  front-end/audits/auditsPanel.css</tspan>
+<tspan x="10" y="1978">120.  2017-04-11 05:27:58 +0000      661 bytes  front-end/audits/module.json</tspan>
+<tspan x="10" y="1994">121.  2017-04-11 05:27:58 +0000    38289 bytes  front-end/bindings/BreakpointManager.js</tspan>
+<tspan x="10" y="2010">122.  2017-04-11 05:27:58 +0000    14332 bytes  front-end/bindings/CSSWorkspaceBinding.js</tspan>
+<tspan x="10" y="2026">123.  2017-04-11 05:27:58 +0000    14125 bytes  front-end/bindings/CompilerScriptMapping.js</tspan>
+<tspan x="10" y="2042">124.  2017-04-11 05:27:58 +0000    10002 bytes  front-end/bindings/ContentProviderBasedProjectDe\</tspan>
+<tspan x="10" y="2058">legate.js</tspan>
+<tspan x="10" y="2074">125.  2017-04-11 05:27:58 +0000     2661 bytes  front-end/bindings/ContentScriptProjectDecorator\</tspan>
+<tspan x="10" y="2090">.js</tspan>
+<tspan x="10" y="2106">126.  2017-04-11 05:27:58 +0000    17709 bytes  front-end/bindings/DebuggerWorkspaceBinding.js</tspan>
+<tspan x="10" y="2122">127.  2017-04-11 05:27:58 +0000     7168 bytes  front-end/bindings/DefaultScriptMapping.js</tspan>
+<tspan x="10" y="2138">128.  2017-04-11 05:27:58 +0000     7404 bytes  front-end/bindings/FileUtils.js</tspan>
+<tspan x="10" y="2154">129.  2017-04-11 05:27:58 +0000    12416 bytes  front-end/bindings/Linkifier.js</tspan>
+<tspan x="10" y="2170">130.  2017-04-11 05:27:58 +0000      820 bytes  front-end/bindings/LiveLocation.js</tspan>
+<tspan x="10" y="2186">131.  2017-04-11 05:27:58 +0000     9870 bytes  front-end/bindings/NetworkUISourceCodeProvider.j\</tspan>
+<tspan x="10" y="2202">s</tspan>
+<tspan x="10" y="2218">132.  2017-04-11 05:27:58 +0000     5967 bytes  front-end/bindings/NetworkWorkspaceBinding.js</tspan>
+<tspan x="10" y="2234">133.  2017-04-11 05:27:58 +0000    12129 bytes  front-end/bindings/PresentationConsoleMessageHel\</tspan>
+<tspan x="10" y="2250">per.js</tspan>
+<tspan x="10" y="2266">134.  2017-04-11 05:27:58 +0000    14690 bytes  front-end/bindings/ResourceScriptMapping.js</tspan>
+<tspan x="10" y="2282">135.  2017-04-11 05:27:58 +0000     7926 bytes  front-end/bindings/ResourceUtils.js</tspan>
+<tspan x="10" y="2298">136.  2017-04-11 05:27:58 +0000    23698 bytes  front-end/bindings/SASSSourceMapping.js</tspan>
+<tspan x="10" y="2314">137.  2017-04-11 05:27:58 +0000    23414 bytes  front-end/bindings/ScriptSnippetModel.js</tspan>
+<tspan x="10" y="2330">138.  2017-04-11 05:27:58 +0000    13380 bytes  front-end/bindings/StylesSourceMapping.js</tspan>
+<tspan x="10" y="2346">139.  2017-04-11 05:27:58 +0000    12351 bytes  front-end/bindings/TempFile.js</tspan>
+<tspan x="10" y="2362">140.  2017-04-11 05:27:58 +0000     2599 bytes  front-end/bindings/WorkspaceController.js</tspan>
+<tspan x="10" y="2378">141.  2017-04-11 05:27:58 +0000      772 bytes  front-end/bindings/module.json</tspan>
+<tspan x="10" y="2394">142.  2017-04-11 05:27:58 +0000     1094 bytes  front-end/cm/LICENSE</tspan>
+<tspan x="10" y="2410">143.  2017-04-11 05:27:58 +0000     1075 bytes  front-end/cm/LICENSE_python</tspan>
+<tspan x="10" y="2426">144.  2017-04-11 05:27:58 +0000     2368 bytes  front-end/cm/PRESUBMIT.py</tspan>
+<tspan x="10" y="2442">145.  2017-04-11 05:27:58 +0000    17288 bytes  front-end/cm/clike.js</tspan>
+<tspan x="10" y="2458">146.  2017-04-11 05:27:58 +0000     5646 bytes  front-end/cm/closebrackets.js</tspan>
+<tspan x="10" y="2474">147.  2017-04-11 05:27:58 +0000     7067 bytes  front-end/cm/codemirror.css</tspan>
+<tspan x="10" y="2490">148.  2017-04-11 05:27:58 +0000   312948 bytes  front-end/cm/codemirror.js</tspan>
+<tspan x="10" y="2506">149.  2017-04-11 05:27:58 +0000    10108 bytes  front-end/cm/coffeescript.js</tspan>
+<tspan x="10" y="2522">150.  2017-04-11 05:27:58 +0000     8008 bytes  front-end/cm/comment.js</tspan>
+<tspan x="10" y="2538">151.  2017-04-11 05:27:58 +0000    31653 bytes  front-end/cm/css.js</tspan>
+<tspan x="10" y="2554">152.  2017-04-11 05:27:58 +0000     5333 bytes  front-end/cm/headlesscodemirror.js</tspan>
+<tspan x="10" y="2570">153.  2017-04-11 05:27:58 +0000     3116 bytes  front-end/cm/htmlembedded.js</tspan>
+<tspan x="10" y="2586">154.  2017-04-11 05:27:58 +0000     5038 bytes  front-end/cm/htmlmixed.js</tspan>
+<tspan x="10" y="2602">155.  2017-04-11 05:27:58 +0000    25875 bytes  front-end/cm/javascript.js</tspan>
+<tspan x="10" y="2618">156.  2017-04-11 05:27:58 +0000     3781 bytes  front-end/cm/markselection.js</tspan>
+<tspan x="10" y="2634">157.  2017-04-11 05:27:58 +0000     5268 bytes  front-end/cm/matchbrackets.js</tspan>
+<tspan x="10" y="2650">158.  2017-04-11 05:27:58 +0000     3045 bytes  front-end/cm/overlay.js</tspan>
+<tspan x="10" y="2666">159.  2017-04-11 05:27:58 +0000    15852 bytes  front-end/cm/php.js</tspan>
+<tspan x="10" y="2682">160.  2017-04-11 05:27:58 +0000    12283 bytes  front-end/cm/python.js</tspan>
+<tspan x="10" y="2698">161.  2017-04-11 05:27:58 +0000     3751 bytes  front-end/cm/shell.js</tspan>
+<tspan x="10" y="2714">162.  2017-04-11 05:27:58 +0000    12357 bytes  front-end/cm/xml.js</tspan>
+<tspan x="10" y="2730">163.  2017-04-11 05:27:58 +0000    21135 bytes  front-end/common/Color.js</tspan>
+<tspan x="10" y="2746">164.  2017-04-11 05:27:58 +0000     2800 bytes  front-end/common/Console.js</tspan>
+<tspan x="10" y="2762">165.  2017-04-11 05:27:58 +0000     3176 bytes  front-end/common/ContentProvider.js</tspan>
+<tspan x="10" y="2778">166.  2017-04-11 05:27:58 +0000     9632 bytes  front-end/common/Geometry.js</tspan>
+<tspan x="10" y="2794">167.  2017-04-11 05:27:58 +0000     1066 bytes  front-end/common/Lock.js</tspan>
+<tspan x="10" y="2810">168.  2017-04-11 05:27:58 +0000     2022 bytes  front-end/common/ModuleExtensionInterfaces.js</tspan>
+<tspan x="10" y="2826">169.  2017-04-11 05:27:58 +0000      608 bytes  front-end/common/NotificationService.js</tspan>
+<tspan x="10" y="2842">170.  2017-04-11 05:27:58 +0000     5232 bytes  front-end/common/Object.js</tspan>
+<tspan x="10" y="2858">171.  2017-04-11 05:27:58 +0000     9034 bytes  front-end/common/ParsedURL.js</tspan>
+<tspan x="10" y="2874">172.  2017-04-11 05:27:58 +0000     5620 bytes  front-end/common/Progress.js</tspan>
+<tspan x="10" y="2890">173.  2017-04-11 05:27:58 +0000     5522 bytes  front-end/common/ResourceType.js</tspan>
+<tspan x="10" y="2906">174.  2017-04-11 05:27:58 +0000    24387 bytes  front-end/common/Settings.js</tspan>
+<tspan x="10" y="2922">175.  2017-04-11 05:27:58 +0000     1949 bytes  front-end/common/StaticContentProvider.js</tspan>
+<tspan x="10" y="2938">176.  2017-04-11 05:27:58 +0000     7408 bytes  front-end/common/TextRange.js</tspan>
+<tspan x="10" y="2954">177.  2017-04-11 05:27:58 +0000     5675 bytes  front-end/common/TextUtils.js</tspan>
+<tspan x="10" y="2970">178.  2017-04-11 05:27:58 +0000     2720 bytes  front-end/common/Throttler.js</tspan>
+<tspan x="10" y="2986">179.  2017-04-11 05:27:58 +0000     2897 bytes  front-end/common/UIString.js</tspan>
+<tspan x="10" y="3002">180.  2017-04-11 05:27:58 +0000      196 bytes  front-end/common/WebInspector.js</tspan>
+<tspan x="10" y="3018">181.  2017-04-11 05:27:58 +0000     7888 bytes  front-end/common/WorkerRuntime.js</tspan>
+<tspan x="10" y="3034">182.  2017-04-11 05:27:58 +0000      566 bytes  front-end/common/module.json</tspan>
+<tspan x="10" y="3050">183.  2017-04-11 05:27:58 +0000    11419 bytes  front-end/components/CookiesTable.js</tspan>
+<tspan x="10" y="3066">184.  2017-04-11 05:27:58 +0000    17548 bytes  front-end/components/DOMBreakpointsSidebarPane.j\</tspan>
+<tspan x="10" y="3082">s</tspan>
+<tspan x="10" y="3098">185.  2017-04-11 05:27:58 +0000    17405 bytes  front-end/components/DOMPresentationUtils.js</tspan>
+<tspan x="10" y="3114">186.  2017-04-11 05:27:58 +0000     7350 bytes  front-end/components/DockController.js</tspan>
+<tspan x="10" y="3130">187.  2017-04-11 05:27:58 +0000     6759 bytes  front-end/components/Drawer.js</tspan>
+<tspan x="10" y="3146">188.  2017-04-11 05:27:58 +0000     5840 bytes  front-end/components/ExecutionContextSelector.js</tspan>
+<tspan x="10" y="3162">189.  2017-04-11 05:27:58 +0000    10710 bytes  front-end/components/HandlerRegistry.js</tspan>
+<tspan x="10" y="3178">190.  2017-04-11 05:27:58 +0000     4489 bytes  front-end/components/InspectElementModeControlle\</tspan>
+<tspan x="10" y="3194">r.js</tspan>
+<tspan x="10" y="3210">191.  2017-04-11 05:27:58 +0000    17802 bytes  front-end/components/InspectorView.js</tspan>
+<tspan x="10" y="3226">192.  2017-04-11 05:27:58 +0000     3387 bytes  front-end/components/NativeBreakpointsSidebarPan\</tspan>
+<tspan x="10" y="3242">e.js</tspan>
+<tspan x="10" y="3258">193.  2017-04-11 05:27:58 +0000     8466 bytes  front-end/components/ObjectPopoverHelper.js</tspan>
+<tspan x="10" y="3274">194.  2017-04-11 05:27:58 +0000    39891 bytes  front-end/components/ObjectPropertiesSection.js</tspan>
+<tspan x="10" y="3290">195.  2017-04-11 05:27:58 +0000    25273 bytes  front-end/components/ShortcutsScreen.js</tspan>
+<tspan x="10" y="3306">196.  2017-04-11 05:27:58 +0000     2720 bytes  front-end/components/TargetsComboBoxController.j\</tspan>
+<tspan x="10" y="3322">s</tspan>
+<tspan x="10" y="3338">197.  2017-04-11 05:27:58 +0000     3333 bytes  front-end/components/breakpointsList.css</tspan>
+<tspan x="10" y="3354">198.  2017-04-11 05:27:58 +0000      643 bytes  front-end/components/module.json</tspan>
+<tspan x="10" y="3370">199.  2017-04-11 05:27:58 +0000     4949 bytes  front-end/console/ConsolePanel.js</tspan>
+<tspan x="10" y="3386">200.  2017-04-11 05:27:58 +0000    48252 bytes  front-end/console/ConsoleView.js</tspan>
+<tspan x="10" y="3402">201.  2017-04-11 05:27:58 +0000    52706 bytes  front-end/console/ConsoleViewMessage.js</tspan>
+<tspan x="10" y="3418">202.  2017-04-11 05:27:58 +0000     9203 bytes  front-end/console/consoleView.css</tspan>
+<tspan x="10" y="3434">203.  2017-04-11 05:27:58 +0000     2066 bytes  front-end/console/module.json</tspan>
+<tspan x="10" y="3450">204.  2017-04-11 05:27:58 +0000     7173 bytes  front-end/devices/DevicesView.js</tspan>
+<tspan x="10" y="3466">205.  2017-04-11 05:27:58 +0000      869 bytes  front-end/devices/devicesView.css</tspan>
+<tspan x="10" y="3482">206.  2017-04-11 05:27:58 +0000      425 bytes  front-end/devices/module.json</tspan>
+<tspan x="10" y="3498">207.  2017-04-11 05:27:58 +0000      244 bytes  front-end/devtools.css</tspan>
+<tspan x="10" y="3514">208.  2017-04-11 05:27:58 +0000     1053 bytes  front-end/devtools.html</tspan>
+<tspan x="10" y="3530">209.  2017-04-11 05:27:58 +0000      204 bytes  front-end/devtools.js</tspan>
+<tspan x="10" y="3546">210.  2017-04-11 05:27:58 +0000      197 bytes  front-end/devtools.json</tspan>
+<tspan x="10" y="3562">211.  2017-04-11 05:27:58 +0000     8442 bytes  front-end/devtools_app/DevToolsAPI.js</tspan>
+<tspan x="10" y="3578">212.  2017-04-11 05:27:58 +0000      764 bytes  front-end/devtools_app/DevToolsApp.js</tspan>
+<tspan x="10" y="3594">213.  2017-04-11 05:27:58 +0000     8526 bytes  front-end/devtools_app/InspectorFrontendHostImpl\</tspan>
+<tspan x="10" y="3610">.js</tspan>
+<tspan x="10" y="3626">214.  2017-04-11 05:27:58 +0000      764 bytes  front-end/devtools_app/UITests.js</tspan>
+<tspan x="10" y="3642">215.  2017-04-11 05:27:58 +0000      276 bytes  front-end/devtools_app/module.json</tspan>
+<tspan x="10" y="3658">216.  2017-04-11 05:27:58 +0000     1158 bytes  front-end/dialog.css</tspan>
+<tspan x="10" y="3674">217.  2017-04-11 05:27:58 +0000     6724 bytes  front-end/documentation/DocumentationCatalog.js</tspan>
+<tspan x="10" y="3690">218.  2017-04-11 05:27:58 +0000    17385 bytes  front-end/documentation/DocumentationView.js</tspan>
+<tspan x="10" y="3706">219.  2017-04-11 05:27:58 +0000     5062 bytes  front-end/documentation/JSArticle.js</tspan>
+<tspan x="10" y="3722">220.  2017-04-11 05:27:58 +0000    38233 bytes  front-end/documentation/WikiParser.js</tspan>
+<tspan x="10" y="3738">221.  2017-04-11 05:27:58 +0000     2429 bytes  front-end/documentation/documentationView.css</tspan>
+<tspan x="10" y="3754">222.  2017-04-11 05:27:58 +0000      526 bytes  front-end/documentation/module.json</tspan>
+<tspan x="10" y="3770">223.  2017-04-11 05:27:58 +0000    17260 bytes  front-end/elements/AnimationsSidebarPane.js</tspan>
+<tspan x="10" y="3786">224.  2017-04-11 05:27:58 +0000    14763 bytes  front-end/elements/ElementsBreadcrumbs.js</tspan>
+<tspan x="10" y="3802">225.  2017-04-11 05:27:58 +0000    38249 bytes  front-end/elements/ElementsPanel.js</tspan>
+<tspan x="10" y="3818">226.  2017-04-11 05:27:58 +0000     1695 bytes  front-end/elements/ElementsSidebarPane.js</tspan>
+<tspan x="10" y="3834">227.  2017-04-11 05:27:58 +0000   113635 bytes  front-end/elements/ElementsTreeOutline.js</tspan>
+<tspan x="10" y="3850">228.  2017-04-11 05:27:58 +0000    10594 bytes  front-end/elements/EventListenersSidebarPane.js</tspan>
+<tspan x="10" y="3866">229.  2017-04-11 05:27:58 +0000    20233 bytes  front-end/elements/MetricsSidebarPane.js</tspan>
+<tspan x="10" y="3882">230.  2017-04-11 05:27:58 +0000     6361 bytes  front-end/elements/PlatformFontsSidebarPane.js</tspan>
+<tspan x="10" y="3898">231.  2017-04-11 05:27:58 +0000     6316 bytes  front-end/elements/PropertiesSidebarPane.js</tspan>
+<tspan x="10" y="3914">232.  2017-04-11 05:27:58 +0000    15342 bytes  front-end/elements/Spectrum.js</tspan>
+<tspan x="10" y="3930">233.  2017-04-11 05:27:58 +0000    10310 bytes  front-end/elements/StylesSectionModel.js</tspan>
+<tspan x="10" y="3946">234.  2017-04-11 05:27:58 +0000   134494 bytes  front-end/elements/StylesSidebarPane.js</tspan>
+<tspan x="10" y="3962">235.  2017-04-11 05:27:58 +0000      839 bytes  front-end/elements/breadcrumbs.css</tspan>
+<tspan x="10" y="3978">236.  2017-04-11 05:27:58 +0000    16097 bytes  front-end/elements/elementsPanel.css</tspan>
+<tspan x="10" y="3994">237.  2017-04-11 05:27:58 +0000     6747 bytes  front-end/elements/elementsTreeOutline.css</tspan>
+<tspan x="10" y="4010">238.  2017-04-11 05:27:58 +0000     3172 bytes  front-end/elements/module.json</tspan>
+<tspan x="10" y="4026">239.  2017-04-11 05:27:58 +0000     1978 bytes  front-end/elements/spectrum.css</tspan>
+<tspan x="10" y="4042">240.  2017-04-11 05:27:58 +0000    30140 bytes  front-end/extensions/ExtensionAPI.js</tspan>
+<tspan x="10" y="4058">241.  2017-04-11 05:27:58 +0000     2484 bytes  front-end/extensions/ExtensionAuditCategory.js</tspan>
+<tspan x="10" y="4074">242.  2017-04-11 05:27:58 +0000     9351 bytes  front-end/extensions/ExtensionPanel.js</tspan>
+<tspan x="10" y="4090">243.  2017-04-11 05:27:58 +0000     1888 bytes  front-end/extensions/ExtensionRegistryStub.js</tspan>
+<tspan x="10" y="4106">244.  2017-04-11 05:27:58 +0000    43045 bytes  front-end/extensions/ExtensionServer.js</tspan>
+<tspan x="10" y="4122">245.  2017-04-11 05:27:58 +0000     3469 bytes  front-end/extensions/ExtensionView.js</tspan>
+<tspan x="10" y="4138">246.  2017-04-11 05:27:58 +0000      263 bytes  front-end/extensions/module.json</tspan>
+<tspan x="10" y="4154">247.  2017-04-11 05:27:58 +0000    16968 bytes  front-end/externs.js</tspan>
+<tspan x="10" y="4170">248.  2017-04-11 05:27:58 +0000    13974 bytes  front-end/heap_snapshot_worker/AllocationProfile\</tspan>
+<tspan x="10" y="4186">.js</tspan>
+<tspan x="10" y="4202">249.  2017-04-11 05:27:58 +0000    81673 bytes  front-end/heap_snapshot_worker/HeapSnapshot.js</tspan>
+<tspan x="10" y="4218">250.  2017-04-11 05:27:58 +0000    11133 bytes  front-end/heap_snapshot_worker/HeapSnapshotLoade\</tspan>
+<tspan x="10" y="4234">r.js</tspan>
+<tspan x="10" y="4250">251.  2017-04-11 05:27:58 +0000     1984 bytes  front-end/heap_snapshot_worker/HeapSnapshotWorke\</tspan>
+<tspan x="10" y="4266">r.js</tspan>
+<tspan x="10" y="4282">252.  2017-04-11 05:27:58 +0000     4268 bytes  front-end/heap_snapshot_worker/HeapSnapshotWorke\</tspan>
+<tspan x="10" y="4298">rDispatcher.js</tspan>
+<tspan x="10" y="4314">253.  2017-04-11 05:27:58 +0000    28383 bytes  front-end/heap_snapshot_worker/JSHeapSnapshot.js</tspan>
+<tspan x="10" y="4330">254.  2017-04-11 05:27:58 +0000      442 bytes  front-end/heap_snapshot_worker/module.json</tspan>
+<tspan x="10" y="4346">255.  2017-04-11 05:27:58 +0000    17149 bytes  front-end/host/InspectorFrontendHost.js</tspan>
+<tspan x="10" y="4362">256.  2017-04-11 05:27:58 +0000     3429 bytes  front-end/host/Platform.js</tspan>
+<tspan x="10" y="4378">257.  2017-04-11 05:27:58 +0000     3648 bytes  front-end/host/UserMetrics.js</tspan>
+<tspan x="10" y="4394">258.  2017-04-11 05:27:58 +0000      177 bytes  front-end/host/module.json</tspan>
+<tspan x="10" y="4410">259.  2017-04-11 05:27:58 +0000      438 bytes  front-end/inspector.css</tspan>
+<tspan x="10" y="4426">260.  2017-04-11 05:27:58 +0000      645 bytes  front-end/inspector.html</tspan>
+<tspan x="10" y="4442">261.  2017-04-11 05:27:58 +0000      205 bytes  front-end/inspector.js</tspan>
+<tspan x="10" y="4458">262.  2017-04-11 05:27:58 +0000     1153 bytes  front-end/inspector.json</tspan>
+<tspan x="10" y="4474">263.  2017-04-11 05:27:58 +0000     2725 bytes  front-end/inspectorCommon.css</tspan>
+<tspan x="10" y="4490">264.  2017-04-11 05:27:58 +0000    40595 bytes  front-end/inspectorStyle.css</tspan>
+<tspan x="10" y="4506">265.  2017-04-11 05:27:58 +0000     4816 bytes  front-end/inspectorSyntaxHighlight.css</tspan>
+<tspan x="10" y="4522">266.  2017-04-11 05:27:58 +0000     2329 bytes  front-end/layers/LayerPaintProfilerView.js</tspan>
+<tspan x="10" y="4538">267.  2017-04-11 05:27:58 +0000    10241 bytes  front-end/layers/LayersPanel.js</tspan>
+<tspan x="10" y="4554">268.  2017-04-11 05:27:58 +0000      598 bytes  front-end/layers/module.json</tspan>
+<tspan x="10" y="4570">269.  2017-04-11 05:27:58 +0000    11372 bytes  front-end/main/AdvancedApp.js</tspan>
+<tspan x="10" y="4586">270.  2017-04-11 05:27:58 +0000      413 bytes  front-end/main/App.js</tspan>
+<tspan x="10" y="4602">271.  2017-04-11 05:27:58 +0000     2398 bytes  front-end/main/HelpScreenUntilReload.js</tspan>
+<tspan x="10" y="4618">272.  2017-04-11 05:27:58 +0000    34044 bytes  front-end/main/Main.js</tspan>
+<tspan x="10" y="4634">273.  2017-04-11 05:27:58 +0000    32105 bytes  front-end/main/OverridesView.js</tspan>
+<tspan x="10" y="4650">274.  2017-04-11 05:27:58 +0000     4918 bytes  front-end/main/RenderingOptions.js</tspan>
+<tspan x="10" y="4666">275.  2017-04-11 05:27:58 +0000     4229 bytes  front-end/main/ScreencastApp.js</tspan>
+<tspan x="10" y="4682">276.  2017-04-11 05:27:58 +0000      705 bytes  front-end/main/SimpleApp.js</tspan>
+<tspan x="10" y="4698">277.  2017-04-11 05:27:58 +0000     1978 bytes  front-end/main/TestController.js</tspan>
+<tspan x="10" y="4714">278.  2017-04-11 05:27:58 +0000    28855 bytes  front-end/main/Tests.js</tspan>
+<tspan x="10" y="4730">279.  2017-04-11 05:27:58 +0000     3366 bytes  front-end/main/accelerometer.css</tspan>
+<tspan x="10" y="4746">280.  2017-04-11 05:27:58 +0000     8482 bytes  front-end/main/module.json</tspan>
+<tspan x="10" y="4762">281.  2017-04-11 05:27:58 +0000     6853 bytes  front-end/main/overrides.css</tspan>
+<tspan x="10" y="4778">282.  2017-04-11 05:27:58 +0000     6878 bytes  front-end/network/FilterSuggestionBuilder.js</tspan>
+<tspan x="10" y="4794">283.  2017-04-11 05:27:58 +0000     4971 bytes  front-end/network/HARWriter.js</tspan>
+<tspan x="10" y="4810">284.  2017-04-11 05:27:58 +0000    22592 bytes  front-end/network/NetworkDataGridNode.js</tspan>
+<tspan x="10" y="4826">285.  2017-04-11 05:27:58 +0000     5603 bytes  front-end/network/NetworkItemView.js</tspan>
+<tspan x="10" y="4842">286.  2017-04-11 05:27:58 +0000    72592 bytes  front-end/network/NetworkLogView.js</tspan>
+<tspan x="10" y="4858">287.  2017-04-11 05:27:58 +0000    13963 bytes  front-end/network/NetworkPanel.js</tspan>
+<tspan x="10" y="4874">288.  2017-04-11 05:27:58 +0000    10456 bytes  front-end/network/NetworkTimeCalculator.js</tspan>
+<tspan x="10" y="4890">289.  2017-04-11 05:27:58 +0000     3801 bytes  front-end/network/RequestCookiesView.js</tspan>
+<tspan x="10" y="4906">290.  2017-04-11 05:27:58 +0000     2595 bytes  front-end/network/RequestHTMLView.js</tspan>
+<tspan x="10" y="4922">291.  2017-04-11 05:27:58 +0000    20904 bytes  front-end/network/RequestHeadersView.js</tspan>
+<tspan x="10" y="4938">292.  2017-04-11 05:27:58 +0000     7288 bytes  front-end/network/RequestJSONView.js</tspan>
+<tspan x="10" y="4954">293.  2017-04-11 05:27:58 +0000     5170 bytes  front-end/network/RequestPreviewView.js</tspan>
+<tspan x="10" y="4970">294.  2017-04-11 05:27:58 +0000     5351 bytes  front-end/network/RequestResponseView.js</tspan>
+<tspan x="10" y="4986">295.  2017-04-11 05:27:58 +0000     7366 bytes  front-end/network/RequestTimingView.js</tspan>
+<tspan x="10" y="5002">296.  2017-04-11 05:27:58 +0000     2800 bytes  front-end/network/RequestView.js</tspan>
+<tspan x="10" y="5018">297.  2017-04-11 05:27:58 +0000     8222 bytes  front-end/network/ResourceWebSocketFrameView.js</tspan>
+<tspan x="10" y="5034">298.  2017-04-11 05:27:58 +0000     1469 bytes  front-end/network/module.json</tspan>
+<tspan x="10" y="5050">299.  2017-04-11 05:27:58 +0000    12187 bytes  front-end/network/networkLogView.css</tspan>
+<tspan x="10" y="5066">300.  2017-04-11 05:27:58 +0000     4367 bytes  front-end/network/networkPanel.css</tspan>
+<tspan x="10" y="5082">301.  2017-04-11 05:27:58 +0000      575 bytes  front-end/network/requestCookiesView.css</tspan>
+<tspan x="10" y="5098">302.  2017-04-11 05:27:58 +0000     1898 bytes  front-end/network/requestHeadersView.css</tspan>
+<tspan x="10" y="5114">303.  2017-04-11 05:27:58 +0000      927 bytes  front-end/network/webSocketFrameView.css</tspan>
+<tspan x="10" y="5130">304.  2017-04-11 05:27:58 +0000    20594 bytes  front-end/platform/DOMExtension.js</tspan>
+<tspan x="10" y="5146">305.  2017-04-11 05:27:58 +0000     1057 bytes  front-end/platform/Promise.js</tspan>
+<tspan x="10" y="5162">306.  2017-04-11 05:27:58 +0000      128 bytes  front-end/platform/module.json</tspan>
+<tspan x="10" y="5178">307.  2017-04-11 05:27:58 +0000    36965 bytes  front-end/platform/utilities.js</tspan>
+<tspan x="10" y="5194">308.  2017-04-11 05:27:58 +0000     1203 bytes  front-end/popover.css</tspan>
+<tspan x="10" y="5210">309.  2017-04-11 05:27:58 +0000    10967 bytes  front-end/profiler/CPUProfileBottomUpDataGrid.js</tspan>
+<tspan x="10" y="5226">310.  2017-04-11 05:27:58 +0000    21223 bytes  front-end/profiler/CPUProfileDataGrid.js</tspan>
+<tspan x="10" y="5242">311.  2017-04-11 05:27:58 +0000    22894 bytes  front-end/profiler/CPUProfileFlameChart.js</tspan>
+<tspan x="10" y="5258">312.  2017-04-11 05:27:58 +0000     5027 bytes  front-end/profiler/CPUProfileTopDownDataGrid.js</tspan>
+<tspan x="10" y="5274">313.  2017-04-11 05:27:58 +0000    26091 bytes  front-end/profiler/CPUProfileView.js</tspan>
+<tspan x="10" y="5290">314.  2017-04-11 05:27:58 +0000    47183 bytes  front-end/profiler/CanvasProfileView.js</tspan>
+<tspan x="10" y="5306">315.  2017-04-11 05:27:58 +0000    20235 bytes  front-end/profiler/CanvasReplayStateView.js</tspan>
+<tspan x="10" y="5322">316.  2017-04-11 05:27:58 +0000     9724 bytes  front-end/profiler/HeapSnapshotCommon.js</tspan>
+<tspan x="10" y="5338">317.  2017-04-11 05:27:58 +0000    35647 bytes  front-end/profiler/HeapSnapshotDataGrids.js</tspan>
+<tspan x="10" y="5354">318.  2017-04-11 05:27:58 +0000    51204 bytes  front-end/profiler/HeapSnapshotGridNodes.js</tspan>
+<tspan x="10" y="5370">319.  2017-04-11 05:27:58 +0000    17062 bytes  front-end/profiler/HeapSnapshotProxy.js</tspan>
+<tspan x="10" y="5386">320.  2017-04-11 05:27:58 +0000    73810 bytes  front-end/profiler/HeapSnapshotView.js</tspan>
+<tspan x="10" y="5402">321.  2017-04-11 05:27:58 +0000     9664 bytes  front-end/profiler/ProfileLauncherView.js</tspan>
+<tspan x="10" y="5418">322.  2017-04-11 05:27:58 +0000     1353 bytes  front-end/profiler/ProfileTypeRegistry.js</tspan>
+<tspan x="10" y="5434">323.  2017-04-11 05:27:58 +0000    38273 bytes  front-end/profiler/ProfilesPanel.js</tspan>
+<tspan x="10" y="5450">324.  2017-04-11 05:27:58 +0000     4343 bytes  front-end/profiler/canvasProfiler.css</tspan>
+<tspan x="10" y="5466">325.  2017-04-11 05:27:58 +0000     5015 bytes  front-end/profiler/heapProfiler.css</tspan>
+<tspan x="10" y="5482">326.  2017-04-11 05:27:58 +0000     1895 bytes  front-end/profiler/module.json</tspan>
+<tspan x="10" y="5498">327.  2017-04-11 05:27:58 +0000     6160 bytes  front-end/profiler/profilesPanel.css</tspan>
+<tspan x="10" y="5514">328.  2017-04-11 05:27:58 +0000     7742 bytes  front-end/promises/PromisePane.js</tspan>
+<tspan x="10" y="5530">329.  2017-04-11 05:27:58 +0000      450 bytes  front-end/promises/module.json</tspan>
+<tspan x="10" y="5546">330.  2017-04-11 05:27:58 +0000     1025 bytes  front-end/promises/promisePane.css</tspan>
+<tspan x="10" y="5562">331.  2017-04-11 05:27:58 +0000    10505 bytes  front-end/resources/ApplicationCacheItemsView.js</tspan>
+<tspan x="10" y="5578">332.  2017-04-11 05:27:58 +0000     6789 bytes  front-end/resources/CookieItemsView.js</tspan>
+<tspan x="10" y="5594">333.  2017-04-11 05:27:58 +0000     8786 bytes  front-end/resources/DOMStorageItemsView.js</tspan>
+<tspan x="10" y="5610">334.  2017-04-11 05:27:58 +0000     7162 bytes  front-end/resources/DatabaseQueryView.js</tspan>
+<tspan x="10" y="5626">335.  2017-04-11 05:27:58 +0000     3558 bytes  front-end/resources/DatabaseTableView.js</tspan>
+<tspan x="10" y="5642">336.  2017-04-11 05:27:58 +0000     6566 bytes  front-end/resources/DirectoryContentView.js</tspan>
+<tspan x="10" y="5658">337.  2017-04-11 05:27:58 +0000     5493 bytes  front-end/resources/FileContentView.js</tspan>
+<tspan x="10" y="5674">338.  2017-04-11 05:27:58 +0000     8038 bytes  front-end/resources/FileSystemView.js</tspan>
+<tspan x="10" y="5690">339.  2017-04-11 05:27:58 +0000    15131 bytes  front-end/resources/IndexedDBViews.js</tspan>
+<tspan x="10" y="5706">340.  2017-04-11 05:27:58 +0000    72493 bytes  front-end/resources/ResourcesPanel.js</tspan>
+<tspan x="10" y="5722">341.  2017-04-11 05:27:58 +0000     3226 bytes  front-end/resources/indexedDBViews.css</tspan>
+<tspan x="10" y="5738">342.  2017-04-11 05:27:58 +0000      915 bytes  front-end/resources/module.json</tspan>
+<tspan x="10" y="5754">343.  2017-04-11 05:27:58 +0000     8741 bytes  front-end/resources/resourcesPanel.css</tspan>
+<tspan x="10" y="5770">344.  2017-04-11 05:27:58 +0000    32785 bytes  front-end/screencast/ScreencastView.js</tspan>
+<tspan x="10" y="5786">345.  2017-04-11 05:27:58 +0000      162 bytes  front-end/screencast/module.json</tspan>
+<tspan x="10" y="5802">346.  2017-04-11 05:27:58 +0000     4392 bytes  front-end/screencast/screencastView.css</tspan>
+<tspan x="10" y="5818">347.  2017-04-11 05:27:58 +0000     9271 bytes  front-end/script_formatter_worker/CSSFormatter.j\</tspan>
+<tspan x="10" y="5834">s</tspan>
+<tspan x="10" y="5850">348.  2017-04-11 05:27:58 +0000    41680 bytes  front-end/script_formatter_worker/JavaScriptForm\</tspan>
+<tspan x="10" y="5866">atter.js</tspan>
+<tspan x="10" y="5882">349.  2017-04-11 05:27:58 +0000    17394 bytes  front-end/script_formatter_worker/ScriptFormatte\</tspan>
+<tspan x="10" y="5898">rWorker.js</tspan>
+<tspan x="10" y="5914">350.  2017-04-11 05:27:58 +0000      591 bytes  front-end/script_formatter_worker/module.json</tspan>
+<tspan x="10" y="5930">351.  2017-04-11 05:27:58 +0000    11099 bytes  front-end/sdk/AnimationModel.js</tspan>
+<tspan x="10" y="5946">352.  2017-04-11 05:27:58 +0000     7932 bytes  front-end/sdk/ApplicationCacheModel.js</tspan>
+<tspan x="10" y="5962">353.  2017-04-11 05:27:58 +0000     3512 bytes  front-end/sdk/BlackboxSupport.js</tspan>
+<tspan x="10" y="5978">354.  2017-04-11 05:27:58 +0000    11353 bytes  front-end/sdk/CPUProfileDataModel.js</tspan>
+<tspan x="10" y="5994">355.  2017-04-11 05:27:58 +0000     5353 bytes  front-end/sdk/CPUProfilerModel.js</tspan>
+<tspan x="10" y="6010">356.  2017-04-11 05:27:58 +0000    34100 bytes  front-end/sdk/CSSMetadata.js</tspan>
+<tspan x="10" y="6026">357.  2017-04-11 05:27:58 +0000     3195 bytes  front-end/sdk/CSSParser.js</tspan>
+<tspan x="10" y="6042">358.  2017-04-11 05:27:58 +0000    54745 bytes  front-end/sdk/CSSStyleModel.js</tspan>
+<tspan x="10" y="6058">359.  2017-04-11 05:27:58 +0000    17821 bytes  front-end/sdk/ConsoleModel.js</tspan>
+<tspan x="10" y="6074">360.  2017-04-11 05:27:58 +0000     8930 bytes  front-end/sdk/ContentProviders.js</tspan>
+<tspan x="10" y="6090">361.  2017-04-11 05:27:58 +0000    12348 bytes  front-end/sdk/CookieParser.js</tspan>
+<tspan x="10" y="6106">362.  2017-04-11 05:27:58 +0000    56743 bytes  front-end/sdk/DOMModel.js</tspan>
+<tspan x="10" y="6122">363.  2017-04-11 05:27:58 +0000    10104 bytes  front-end/sdk/DOMStorage.js</tspan>
+<tspan x="10" y="6138">364.  2017-04-11 05:27:58 +0000     5916 bytes  front-end/sdk/Database.js</tspan>
+<tspan x="10" y="6154">365.  2017-04-11 05:27:58 +0000    37435 bytes  front-end/sdk/DebuggerModel.js</tspan>
+<tspan x="10" y="6170">366.  2017-04-11 05:27:58 +0000    16454 bytes  front-end/sdk/FileSystemModel.js</tspan>
+<tspan x="10" y="6186">367.  2017-04-11 05:27:58 +0000    11090 bytes  front-end/sdk/HAREntry.js</tspan>
+<tspan x="10" y="6202">368.  2017-04-11 05:27:58 +0000     3295 bytes  front-end/sdk/HeapProfilerModel.js</tspan>
+<tspan x="10" y="6218">369.  2017-04-11 05:27:58 +0000    17864 bytes  front-end/sdk/IndexedDBModel.js</tspan>
+<tspan x="10" y="6234">370.  2017-04-11 05:27:58 +0000    32799 bytes  front-end/sdk/InspectorBackend.js</tspan>
+<tspan x="10" y="6250">371.  2017-04-11 05:27:58 +0000    29295 bytes  front-end/sdk/LayerTreeModel.js</tspan>
+<tspan x="10" y="6266">372.  2017-04-11 05:27:58 +0000     5260 bytes  front-end/sdk/NetworkLog.js</tspan>
+<tspan x="10" y="6282">373.  2017-04-11 05:27:58 +0000    22837 bytes  front-end/sdk/NetworkManager.js</tspan>
+<tspan x="10" y="6298">374.  2017-04-11 05:27:58 +0000    26676 bytes  front-end/sdk/NetworkRequest.js</tspan>
+<tspan x="10" y="6314">375.  2017-04-11 05:27:58 +0000    30996 bytes  front-end/sdk/OverridesSupport.js</tspan>
+<tspan x="10" y="6330">376.  2017-04-11 05:27:58 +0000     6416 bytes  front-end/sdk/PaintProfiler.js</tspan>
+<tspan x="10" y="6346">377.  2017-04-11 05:27:58 +0000     1797 bytes  front-end/sdk/PowerProfiler.js</tspan>
+<tspan x="10" y="6362">378.  2017-04-11 05:27:58 +0000    34025 bytes  front-end/sdk/RemoteObject.js</tspan>
+<tspan x="10" y="6378">379.  2017-04-11 05:27:58 +0000    11032 bytes  front-end/sdk/Resource.js</tspan>
+<tspan x="10" y="6394">380.  2017-04-11 05:27:58 +0000    26065 bytes  front-end/sdk/ResourceTreeModel.js</tspan>
+<tspan x="10" y="6410">381.  2017-04-11 05:27:58 +0000    16808 bytes  front-end/sdk/RuntimeModel.js</tspan>
+<tspan x="10" y="6426">382.  2017-04-11 05:27:58 +0000     8315 bytes  front-end/sdk/Script.js</tspan>
+<tspan x="10" y="6442">383.  2017-04-11 05:27:58 +0000     5831 bytes  front-end/sdk/SnippetStorage.js</tspan>
+<tspan x="10" y="6458">384.  2017-04-11 05:27:58 +0000    12413 bytes  front-end/sdk/SourceMap.js</tspan>
+<tspan x="10" y="6474">385.  2017-04-11 05:27:58 +0000    17173 bytes  front-end/sdk/Target.js</tspan>
+<tspan x="10" y="6490">386.  2017-04-11 05:27:58 +0000     4692 bytes  front-end/sdk/TracingManager.js</tspan>
+<tspan x="10" y="6506">387.  2017-04-11 05:27:58 +0000     5371 bytes  front-end/sdk/WorkerManager.js</tspan>
+<tspan x="10" y="6522">388.  2017-04-11 05:27:58 +0000     7558 bytes  front-end/sdk/WorkerTargetManager.js</tspan>
+<tspan x="10" y="6538">389.  2017-04-11 05:27:58 +0000     1365 bytes  front-end/sdk/module.json</tspan>
+<tspan x="10" y="6554">390.  2017-04-11 05:27:58 +0000    15098 bytes  front-end/settings/EditFileSystemDialog.js</tspan>
+<tspan x="10" y="6570">391.  2017-04-11 05:27:58 +0000     7976 bytes  front-end/settings/FrameworkBlackboxDialog.js</tspan>
+<tspan x="10" y="6586">392.  2017-04-11 05:27:58 +0000    40903 bytes  front-end/settings/SettingsScreen.js</tspan>
+<tspan x="10" y="6602">393.  2017-04-11 05:27:58 +0000     1021 bytes  front-end/settings/module.json</tspan>
+<tspan x="10" y="6618">394.  2017-04-11 05:27:58 +0000     5851 bytes  front-end/sidebarPane.css</tspan>
+<tspan x="10" y="6634">395.  2017-04-11 05:27:58 +0000    87385 bytes  front-end/source_frame/CodeMirrorTextEditor.js</tspan>
+<tspan x="10" y="6650">396.  2017-04-11 05:27:58 +0000     6615 bytes  front-end/source_frame/CodeMirrorUtils.js</tspan>
+<tspan x="10" y="6666">397.  2017-04-11 05:27:58 +0000     5321 bytes  front-end/source_frame/FontView.js</tspan>
+<tspan x="10" y="6682">398.  2017-04-11 05:27:58 +0000     3989 bytes  front-end/source_frame/GoToLineDialog.js</tspan>
+<tspan x="10" y="6698">399.  2017-04-11 05:27:58 +0000     5782 bytes  front-end/source_frame/ImageView.js</tspan>
+<tspan x="10" y="6714">400.  2017-04-11 05:27:58 +0000     3045 bytes  front-end/source_frame/ResourceSourceFrame.js</tspan>
+<tspan x="10" y="6730">401.  2017-04-11 05:27:58 +0000    32835 bytes  front-end/source_frame/SourceFrame.js</tspan>
+<tspan x="10" y="6746">402.  2017-04-11 05:27:58 +0000     6257 bytes  front-end/source_frame/cmdevtools.css</tspan>
+<tspan x="10" y="6762">403.  2017-04-11 05:27:58 +0000      310 bytes  front-end/source_frame/fontView.css</tspan>
+<tspan x="10" y="6778">404.  2017-04-11 05:27:58 +0000     1146 bytes  front-end/source_frame/imageView.css</tspan>
+<tspan x="10" y="6794">405.  2017-04-11 05:27:58 +0000     2131 bytes  front-end/source_frame/module.json</tspan>
+<tspan x="10" y="6810">406.  2017-04-11 05:27:58 +0000      346 bytes  front-end/source_frame/resourceSourceFrame.css</tspan>
+<tspan x="10" y="6826">407.  2017-04-11 05:27:58 +0000     1610 bytes  front-end/sources/AddSourceMapURLDialog.js</tspan>
+<tspan x="10" y="6842">408.  2017-04-11 05:27:58 +0000    13679 bytes  front-end/sources/AdvancedSearchView.js</tspan>
+<tspan x="10" y="6858">409.  2017-04-11 05:27:58 +0000    36457 bytes  front-end/sources/BreakpointsSidebarPane.js</tspan>
+<tspan x="10" y="6874">410.  2017-04-11 05:27:58 +0000     4390 bytes  front-end/sources/CSSSourceFrame.js</tspan>
+<tspan x="10" y="6890">411.  2017-04-11 05:27:58 +0000    16083 bytes  front-end/sources/CallStackSidebarPane.js</tspan>
+<tspan x="10" y="6906">412.  2017-04-11 05:27:58 +0000     6653 bytes  front-end/sources/EditingLocationHistoryManager.\</tspan>
+<tspan x="10" y="6922">js</tspan>
+<tspan x="10" y="6938">413.  2017-04-11 05:27:58 +0000     8386 bytes  front-end/sources/FileBasedSearchResultsPane.js</tspan>
+<tspan x="10" y="6954">414.  2017-04-11 05:27:58 +0000     6960 bytes  front-end/sources/FilePathScoreFunction.js</tspan>
+<tspan x="10" y="6970">415.  2017-04-11 05:27:58 +0000    30243 bytes  front-end/sources/FilteredItemSelectionDialog.js</tspan>
+<tspan x="10" y="6986">416.  2017-04-11 05:27:58 +0000     4045 bytes  front-end/sources/InplaceFormatterEditorAction.j\</tspan>
+<tspan x="10" y="7002">s</tspan>
+<tspan x="10" y="7018">417.  2017-04-11 05:27:58 +0000    40669 bytes  front-end/sources/JavaScriptSourceFrame.js</tspan>
+<tspan x="10" y="7034">418.  2017-04-11 05:27:58 +0000    43729 bytes  front-end/sources/NavigatorView.js</tspan>
+<tspan x="10" y="7050">419.  2017-04-11 05:27:58 +0000     3375 bytes  front-end/sources/Placard.js</tspan>
+<tspan x="10" y="7066">420.  2017-04-11 05:27:58 +0000    12932 bytes  front-end/sources/RevisionHistoryView.js</tspan>
+<tspan x="10" y="7082">421.  2017-04-11 05:27:58 +0000     7392 bytes  front-end/sources/ScopeChainSidebarPane.js</tspan>
+<tspan x="10" y="7098">422.  2017-04-11 05:27:58 +0000     8688 bytes  front-end/sources/ScriptFormatter.js</tspan>
+<tspan x="10" y="7114">423.  2017-04-11 05:27:58 +0000    16564 bytes  front-end/sources/ScriptFormatterEditorAction.js</tspan>
+<tspan x="10" y="7130">424.  2017-04-11 05:27:58 +0000     4789 bytes  front-end/sources/SimpleHistoryManager.js</tspan>
+<tspan x="10" y="7146">425.  2017-04-11 05:27:58 +0000     6879 bytes  front-end/sources/SourcesNavigator.js</tspan>
+<tspan x="10" y="7162">426.  2017-04-11 05:27:58 +0000    53417 bytes  front-end/sources/SourcesPanel.js</tspan>
+<tspan x="10" y="7178">427.  2017-04-11 05:27:58 +0000    11582 bytes  front-end/sources/SourcesSearchScope.js</tspan>
+<tspan x="10" y="7194">428.  2017-04-11 05:27:58 +0000    27075 bytes  front-end/sources/SourcesView.js</tspan>
+<tspan x="10" y="7210">429.  2017-04-11 05:27:58 +0000     4180 bytes  front-end/sources/StyleSheetOutlineDialog.js</tspan>
+<tspan x="10" y="7226">430.  2017-04-11 05:27:58 +0000    23261 bytes  front-end/sources/TabbedEditorContainer.js</tspan>
+<tspan x="10" y="7242">431.  2017-04-11 05:27:58 +0000     3687 bytes  front-end/sources/ThreadsSidebarPane.js</tspan>
+<tspan x="10" y="7258">432.  2017-04-11 05:27:58 +0000     9928 bytes  front-end/sources/UISourceCodeFrame.js</tspan>
+<tspan x="10" y="7274">433.  2017-04-11 05:27:58 +0000    18689 bytes  front-end/sources/WatchExpressionsSidebarPane.js</tspan>
+<tspan x="10" y="7290">434.  2017-04-11 05:27:58 +0000     7397 bytes  front-end/sources/WorkspaceMappingTip.js</tspan>
+<tspan x="10" y="7306">435.  2017-04-11 05:27:58 +0000     1217 bytes  front-end/sources/filteredItemSelectionDialog.cs\</tspan>
+<tspan x="10" y="7322">s</tspan>
+<tspan x="10" y="7338">436.  2017-04-11 05:27:58 +0000    14662 bytes  front-end/sources/jsdifflib.js</tspan>
+<tspan x="10" y="7354">437.  2017-04-11 05:27:58 +0000     7645 bytes  front-end/sources/module.json</tspan>
+<tspan x="10" y="7370">438.  2017-04-11 05:27:58 +0000     3177 bytes  front-end/sources/navigatorView.css</tspan>
+<tspan x="10" y="7386">439.  2017-04-11 05:27:58 +0000     2878 bytes  front-end/sources/revisionHistory.css</tspan>
+<tspan x="10" y="7402">440.  2017-04-11 05:27:58 +0000     4210 bytes  front-end/sources/sourcesPanel.css</tspan>
+<tspan x="10" y="7418">441.  2017-04-11 05:27:58 +0000     4342 bytes  front-end/sources/sourcesView.css</tspan>
+<tspan x="10" y="7434">442.  2017-04-11 05:27:58 +0000     3295 bytes  front-end/suggestBox.css</tspan>
+<tspan x="10" y="7450">443.  2017-04-11 05:27:58 +0000     3848 bytes  front-end/tabbedPane.css</tspan>
+<tspan x="10" y="7466">444.  2017-04-11 05:27:58 +0000     4097 bytes  front-end/temp_storage_shared_worker/TempStorage\</tspan>
+<tspan x="10" y="7482">SharedWorker.js</tspan>
+<tspan x="10" y="7498">445.  2017-04-11 05:27:58 +0000       50 bytes  front-end/temp_storage_shared_worker/module.json</tspan>
+<tspan x="10" y="7514">446.  2017-04-11 05:27:58 +0000    17975 bytes  front-end/timeline/CountersGraph.js</tspan>
+<tspan x="10" y="7530">447.  2017-04-11 05:27:58 +0000    10930 bytes  front-end/timeline/LayerDetailsView.js</tspan>
+<tspan x="10" y="7546">448.  2017-04-11 05:27:58 +0000     8180 bytes  front-end/timeline/LayerTreeOutline.js</tspan>
+<tspan x="10" y="7562">449.  2017-04-11 05:27:58 +0000    43034 bytes  front-end/timeline/Layers3DView.js</tspan>
+<tspan x="10" y="7578">450.  2017-04-11 05:27:58 +0000     4228 bytes  front-end/timeline/MemoryCountersGraph.js</tspan>
+<tspan x="10" y="7594">451.  2017-04-11 05:27:58 +0000    21772 bytes  front-end/timeline/PaintProfilerView.js</tspan>
+<tspan x="10" y="7610">452.  2017-04-11 05:27:58 +0000     6901 bytes  front-end/timeline/TimelineEventOverview.js</tspan>
+<tspan x="10" y="7626">453.  2017-04-11 05:27:58 +0000    27420 bytes  front-end/timeline/TimelineFlameChart.js</tspan>
+<tspan x="10" y="7642">454.  2017-04-11 05:27:58 +0000    15552 bytes  front-end/timeline/TimelineFrameModel.js</tspan>
+<tspan x="10" y="7658">455.  2017-04-11 05:27:58 +0000    14879 bytes  front-end/timeline/TimelineFrameOverview.js</tspan>
+<tspan x="10" y="7674">456.  2017-04-11 05:27:58 +0000     4936 bytes  front-end/timeline/TimelineJSProfile.js</tspan>
+<tspan x="10" y="7690">457.  2017-04-11 05:27:58 +0000     7561 bytes  front-end/timeline/TimelineLayersView.js</tspan>
+<tspan x="10" y="7706">458.  2017-04-11 05:27:58 +0000     5441 bytes  front-end/timeline/TimelineMemoryOverview.js</tspan>
+<tspan x="10" y="7722">459.  2017-04-11 05:27:58 +0000    59407 bytes  front-end/timeline/TimelineModel.js</tspan>
+<tspan x="10" y="7738">460.  2017-04-11 05:27:58 +0000    11882 bytes  front-end/timeline/TimelineOverviewPane.js</tspan>
+<tspan x="10" y="7754">461.  2017-04-11 05:27:58 +0000     5792 bytes  front-end/timeline/TimelinePaintProfilerView.js</tspan>
+<tspan x="10" y="7770">462.  2017-04-11 05:27:58 +0000    54229 bytes  front-end/timeline/TimelinePanel.js</tspan>
+<tspan x="10" y="7786">463.  2017-04-11 05:27:58 +0000     1692 bytes  front-end/timeline/TimelinePowerGraph.js</tspan>
+<tspan x="10" y="7802">464.  2017-04-11 05:27:58 +0000     7290 bytes  front-end/timeline/TimelinePowerOverview.js</tspan>
+<tspan x="10" y="7818">465.  2017-04-11 05:27:58 +0000    16807 bytes  front-end/timeline/TimelinePresentationModel.js</tspan>
+<tspan x="10" y="7834">466.  2017-04-11 05:27:58 +0000    63218 bytes  front-end/timeline/TimelineUIUtils.js</tspan>
+<tspan x="10" y="7850">467.  2017-04-11 05:27:58 +0000    49035 bytes  front-end/timeline/TimelineView.js</tspan>
+<tspan x="10" y="7866">468.  2017-04-11 05:27:58 +0000    28074 bytes  front-end/timeline/TracingModel.js</tspan>
+<tspan x="10" y="7882">469.  2017-04-11 05:27:58 +0000    10502 bytes  front-end/timeline/TransformController.js</tspan>
+<tspan x="10" y="7898">470.  2017-04-11 05:27:58 +0000     1403 bytes  front-end/timeline/module.json</tspan>
+<tspan x="10" y="7914">471.  2017-04-11 05:27:58 +0000    18482 bytes  front-end/timeline/timelinePanel.css</tspan>
+<tspan x="10" y="7930">472.  2017-04-11 05:27:58 +0000      244 bytes  front-end/toolbox.css</tspan>
+<tspan x="10" y="7946">473.  2017-04-11 05:27:58 +0000      641 bytes  front-end/toolbox.html</tspan>
+<tspan x="10" y="7962">474.  2017-04-11 05:27:58 +0000      203 bytes  front-end/toolbox.js</tspan>
+<tspan x="10" y="7978">475.  2017-04-11 05:27:58 +0000      151 bytes  front-end/toolbox.json</tspan>
+<tspan x="10" y="7994">476.  2017-04-11 05:27:58 +0000     4422 bytes  front-end/toolbox/InspectedPagePlaceholder.js</tspan>
+<tspan x="10" y="8010">477.  2017-04-11 05:27:58 +0000    19010 bytes  front-end/toolbox/MediaQueryInspector.js</tspan>
+<tspan x="10" y="8026">478.  2017-04-11 05:27:58 +0000    30211 bytes  front-end/toolbox/OverridesUI.js</tspan>
+<tspan x="10" y="8042">479.  2017-04-11 05:27:58 +0000    36054 bytes  front-end/toolbox/ResponsiveDesignView.js</tspan>
+<tspan x="10" y="8058">480.  2017-04-11 05:27:58 +0000      305 bytes  front-end/toolbox/module.json</tspan>
+<tspan x="10" y="8074">481.  2017-04-11 05:27:58 +0000    12209 bytes  front-end/toolbox/responsiveDesignView.css</tspan>
+<tspan x="10" y="8090">482.  2017-04-11 05:27:58 +0000      397 bytes  front-end/toolbox_bootstrap/Toolbox.js</tspan>
+<tspan x="10" y="8106">483.  2017-04-11 05:27:58 +0000       96 bytes  front-end/toolbox_bootstrap/module.json</tspan>
+<tspan x="10" y="8122">484.  2017-04-11 05:27:58 +0000    29645 bytes  front-end/treeoutline.js</tspan>
+<tspan x="10" y="8138">485.  2017-04-11 05:27:58 +0000     2594 bytes  front-end/ui/ActionRegistry.js</tspan>
+<tspan x="10" y="8154">486.  2017-04-11 05:27:58 +0000     3545 bytes  front-end/ui/CompletionDictionary.js</tspan>
+<tspan x="10" y="8170">487.  2017-04-11 05:27:58 +0000     3410 bytes  front-end/ui/Context.js</tspan>
+<tspan x="10" y="8186">488.  2017-04-11 05:27:58 +0000    11178 bytes  front-end/ui/ContextMenu.js</tspan>
+<tspan x="10" y="8202">489.  2017-04-11 05:27:58 +0000     4146 bytes  front-end/ui/DOMSyntaxHighlighter.js</tspan>
+<tspan x="10" y="8218">490.  2017-04-11 05:27:58 +0000    57825 bytes  front-end/ui/DataGrid.js</tspan>
+<tspan x="10" y="8234">491.  2017-04-11 05:27:58 +0000     6446 bytes  front-end/ui/Dialog.js</tspan>
+<tspan x="10" y="8250">492.  2017-04-11 05:27:58 +0000     1853 bytes  front-end/ui/DropDownMenu.js</tspan>
+<tspan x="10" y="8266">493.  2017-04-11 05:27:58 +0000     2082 bytes  front-end/ui/EmptyView.js</tspan>
+<tspan x="10" y="8282">494.  2017-04-11 05:27:58 +0000    21634 bytes  front-end/ui/FilterBar.js</tspan>
+<tspan x="10" y="8298">495.  2017-04-11 05:27:58 +0000    45770 bytes  front-end/ui/FlameChart.js</tspan>
+<tspan x="10" y="8314">496.  2017-04-11 05:27:58 +0000     1390 bytes  front-end/ui/ForwardedInputEventHandler.js</tspan>
+<tspan x="10" y="8330">497.  2017-04-11 05:27:58 +0000     4086 bytes  front-end/ui/HelpScreen.js</tspan>
+<tspan x="10" y="8346">498.  2017-04-11 05:27:58 +0000     9346 bytes  front-end/ui/InplaceEditor.js</tspan>
+<tspan x="10" y="8362">499.  2017-04-11 05:27:58 +0000    11455 bytes  front-end/ui/KeyboardShortcut.js</tspan>
+<tspan x="10" y="8378">500.  2017-04-11 05:27:58 +0000    16224 bytes  front-end/ui/OverviewGrid.js</tspan>
+<tspan x="10" y="8394">501.  2017-04-11 05:27:58 +0000     6988 bytes  front-end/ui/Panel.js</tspan>
+<tspan x="10" y="8410">502.  2017-04-11 05:27:58 +0000     5079 bytes  front-end/ui/PieChart.js</tspan>
+<tspan x="10" y="8426">503.  2017-04-11 05:27:58 +0000    15615 bytes  front-end/ui/Popover.js</tspan>
+<tspan x="10" y="8442">504.  2017-04-11 05:27:58 +0000     3898 bytes  front-end/ui/ProgressIndicator.js</tspan>
+<tspan x="10" y="8458">505.  2017-04-11 05:27:58 +0000     4178 bytes  front-end/ui/ResizerWidget.js</tspan>
+<tspan x="10" y="8474">506.  2017-04-11 05:27:58 +0000     1331 bytes  front-end/ui/RootView.js</tspan>
+<tspan x="10" y="8490">507.  2017-04-11 05:27:58 +0000    25133 bytes  front-end/ui/SearchableView.js</tspan>
+<tspan x="10" y="8506">508.  2017-04-11 05:27:58 +0000     6621 bytes  front-end/ui/Section.js</tspan>
+<tspan x="10" y="8522">509.  2017-04-11 05:27:58 +0000     8380 bytes  front-end/ui/SettingsUI.js</tspan>
+<tspan x="10" y="8538">510.  2017-04-11 05:27:58 +0000     6742 bytes  front-end/ui/ShortcutRegistry.js</tspan>
+<tspan x="10" y="8554">511.  2017-04-11 05:27:58 +0000     4979 bytes  front-end/ui/ShowMoreDataGridNode.js</tspan>
+<tspan x="10" y="8570">512.  2017-04-11 05:27:58 +0000     6233 bytes  front-end/ui/SidebarPane.js</tspan>
+<tspan x="10" y="8586">513.  2017-04-11 05:27:58 +0000     5439 bytes  front-end/ui/SidebarTreeElement.js</tspan>
+<tspan x="10" y="8602">514.  2017-04-11 05:27:58 +0000    13706 bytes  front-end/ui/SoftContextMenu.js</tspan>
+<tspan x="10" y="8618">515.  2017-04-11 05:27:58 +0000     5929 bytes  front-end/ui/SortableDataGrid.js</tspan>
+<tspan x="10" y="8634">516.  2017-04-11 05:27:58 +0000    31951 bytes  front-end/ui/SplitView.js</tspan>
+<tspan x="10" y="8650">517.  2017-04-11 05:27:58 +0000     2679 bytes  front-end/ui/StackView.js</tspan>
+<tspan x="10" y="8666">518.  2017-04-11 05:27:58 +0000    24433 bytes  front-end/ui/StatusBar.js</tspan>
+<tspan x="10" y="8682">519.  2017-04-11 05:27:58 +0000    13491 bytes  front-end/ui/SuggestBox.js</tspan>
+<tspan x="10" y="8698">520.  2017-04-11 05:27:58 +0000    37180 bytes  front-end/ui/TabbedPane.js</tspan>
+<tspan x="10" y="8714">521.  2017-04-11 05:27:58 +0000     8909 bytes  front-end/ui/TextEditor.js</tspan>
+<tspan x="10" y="8730">522.  2017-04-11 05:27:58 +0000    29135 bytes  front-end/ui/TextPrompt.js</tspan>
+<tspan x="10" y="8746">523.  2017-04-11 05:27:58 +0000    13050 bytes  front-end/ui/TimelineGrid.js</tspan>
+<tspan x="10" y="8762">524.  2017-04-11 05:27:58 +0000    40619 bytes  front-end/ui/UIUtils.js</tspan>
+<tspan x="10" y="8778">525.  2017-04-11 05:27:58 +0000    19228 bytes  front-end/ui/View.js</tspan>
+<tspan x="10" y="8794">526.  2017-04-11 05:27:58 +0000    21248 bytes  front-end/ui/ViewportControl.js</tspan>
+<tspan x="10" y="8810">527.  2017-04-11 05:27:58 +0000    10198 bytes  front-end/ui/ViewportDataGrid.js</tspan>
+<tspan x="10" y="8826">528.  2017-04-11 05:27:58 +0000     1216 bytes  front-end/ui/ZoomManager.js</tspan>
+<tspan x="10" y="8842">529.  2017-04-11 05:27:58 +0000     4762 bytes  front-end/ui/dataGrid.css</tspan>
+<tspan x="10" y="8858">530.  2017-04-11 05:27:58 +0000     4008 bytes  front-end/ui/filter.css</tspan>
+<tspan x="10" y="8874">531.  2017-04-11 05:27:58 +0000     1249 bytes  front-end/ui/flameChart.css</tspan>
+<tspan x="10" y="8890">532.  2017-04-11 05:27:58 +0000    13177 bytes  front-end/ui/helpScreen.css</tspan>
+<tspan x="10" y="8906">533.  2017-04-11 05:27:58 +0000     1636 bytes  front-end/ui/module.json</tspan>
+<tspan x="10" y="8922">534.  2017-04-11 05:27:58 +0000     1280 bytes  front-end/ui/overviewGrid.css</tspan>
+<tspan x="10" y="8938">535.  2017-04-11 05:27:58 +0000     3513 bytes  front-end/ui/panelEnablerView.css</tspan>
+<tspan x="10" y="8954">536.  2017-04-11 05:27:58 +0000      490 bytes  front-end/ui/pieChart.css</tspan>
+<tspan x="10" y="8970">537.  2017-04-11 05:27:58 +0000      626 bytes  front-end/ui/progressIndicator.css</tspan>
+<tspan x="10" y="8986">538.  2017-04-11 05:27:58 +0000     2815 bytes  front-end/ui/searchableView.css</tspan>
+<tspan x="10" y="9002">539.  2017-04-11 05:27:58 +0000     4920 bytes  front-end/ui/splitView.css</tspan>
+<tspan x="10" y="9018">540.  2017-04-11 05:27:58 +0000     9980 bytes  front-end/ui/statusBar.css</tspan>
+<tspan x="10" y="9034">541.  2017-04-11 05:27:58 +0000    31248 bytes  front-end/ui/treeoutline.js</tspan>
+<tspan x="10" y="9050">542.  2017-04-11 05:27:58 +0000     4717 bytes  front-end/workspace/FileManager.js</tspan>
+<tspan x="10" y="9066">543.  2017-04-11 05:27:58 +0000    15114 bytes  front-end/workspace/FileSystemMapping.js</tspan>
+<tspan x="10" y="9082">544.  2017-04-11 05:27:58 +0000    19514 bytes  front-end/workspace/FileSystemWorkspaceBinding.j\</tspan>
+<tspan x="10" y="9098">s</tspan>
+<tspan x="10" y="9114">545.  2017-04-11 05:27:58 +0000    17820 bytes  front-end/workspace/IsolatedFileSystem.js</tspan>
+<tspan x="10" y="9130">546.  2017-04-11 05:27:58 +0000     7461 bytes  front-end/workspace/IsolatedFileSystemManager.js</tspan>
+<tspan x="10" y="9146">547.  2017-04-11 05:27:58 +0000     5491 bytes  front-end/workspace/SearchConfig.js</tspan>
+<tspan x="10" y="9162">548.  2017-04-11 05:27:58 +0000    19356 bytes  front-end/workspace/UISourceCode.js</tspan>
+<tspan x="10" y="9178">549.  2017-04-11 05:27:58 +0000    24524 bytes  front-end/workspace/Workspace.js</tspan>
+<tspan x="10" y="9194">550.  2017-04-11 05:27:58 +0000      328 bytes  front-end/workspace/module.json</tspan>
+<tspan x="10" y="9210">551.  2017-04-11 05:27:58 +0000     1796 bytes  index.js</tspan>
+<tspan x="10" y="9226">552.  2017-04-11 05:27:58 +0000     6152 bytes  lib/BreakEventHandler.js</tspan>
+<tspan x="10" y="9242">553.  2017-04-11 05:27:58 +0000     2546 bytes  lib/CallFramesProvider.js</tspan>
+<tspan x="10" y="9258">554.  2017-04-11 05:27:58 +0000     2370 bytes  lib/ConsoleAgent.js</tspan>
+<tspan x="10" y="9274">555.  2017-04-11 05:27:58 +0000     1143 bytes  lib/ConsoleClient.js</tspan>
+<tspan x="10" y="9290">556.  2017-04-11 05:27:58 +0000    13993 bytes  lib/DebuggerAgent.js</tspan>
+<tspan x="10" y="9306">557.  2017-04-11 05:27:58 +0000     4737 bytes  lib/DebuggerClient.js</tspan>
+<tspan x="10" y="9322">558.  2017-04-11 05:27:58 +0000     4656 bytes  lib/FrontendClient.js</tspan>
+<tspan x="10" y="9338">559.  2017-04-11 05:27:58 +0000     6618 bytes  lib/FrontendCommandHandler.js</tspan>
+<tspan x="10" y="9354">560.  2017-04-11 05:27:58 +0000     2655 bytes  lib/HeapProfilerAgent.js</tspan>
+<tspan x="10" y="9370">561.  2017-04-11 05:27:58 +0000      990 bytes  lib/HeapProfilerClient.js</tspan>
+<tspan x="10" y="9386">562.  2017-04-11 05:27:58 +0000     4424 bytes  lib/Injections/ConsoleAgent.js</tspan>
+<tspan x="10" y="9402">563.  2017-04-11 05:27:58 +0000     4304 bytes  lib/Injections/HeapProfilerAgent.js</tspan>
+<tspan x="10" y="9418">564.  2017-04-11 05:27:58 +0000    12658 bytes  lib/Injections/NetworkAgent.js</tspan>
+<tspan x="10" y="9434">565.  2017-04-11 05:27:58 +0000      737 bytes  lib/Injections/ProfilerAgent.js</tspan>
+<tspan x="10" y="9450">566.  2017-04-11 05:27:58 +0000     5545 bytes  lib/InjectorClient.js</tspan>
+<tspan x="10" y="9466">567.  2017-04-11 05:27:58 +0000     2178 bytes  lib/InjectorServer.js</tspan>
+<tspan x="10" y="9482">568.  2017-04-11 05:27:58 +0000     5958 bytes  lib/NetworkAgent.js</tspan>
+<tspan x="10" y="9498">569.  2017-04-11 05:27:58 +0000     5474 bytes  lib/PageAgent.js</tspan>
+<tspan x="10" y="9514">570.  2017-04-11 05:27:58 +0000     2996 bytes  lib/ProfilerAgent.js</tspan>
+<tspan x="10" y="9530">571.  2017-04-11 05:27:58 +0000     7960 bytes  lib/RuntimeAgent.js</tspan>
+<tspan x="10" y="9546">572.  2017-04-11 05:27:58 +0000     7842 bytes  lib/ScriptFileStorage.js</tspan>
+<tspan x="10" y="9562">573.  2017-04-11 05:27:58 +0000    10581 bytes  lib/ScriptManager.js</tspan>
+<tspan x="10" y="9578">574.  2017-04-11 05:27:58 +0000      760 bytes  lib/callback.js</tspan>
+<tspan x="10" y="9594">575.  2017-04-11 05:27:58 +0000    15890 bytes  lib/config.js</tspan>
+<tspan x="10" y="9610">576.  2017-04-11 05:27:58 +0000     6674 bytes  lib/convert.js</tspan>
+<tspan x="10" y="9626">577.  2017-04-11 05:27:58 +0000     5359 bytes  lib/debug-server.js</tspan>
+<tspan x="10" y="9642">578.  2017-04-11 05:27:58 +0000     3807 bytes  lib/debugger.js</tspan>
+<tspan x="10" y="9658">579.  2017-04-11 05:27:58 +0000     6911 bytes  lib/plugins.js</tspan>
+<tspan x="10" y="9674">580.  2017-04-11 05:27:58 +0000     2284 bytes  lib/session.js</tspan>
+<tspan x="10" y="9690">581.  2017-04-11 05:27:58 +0000     3438 bytes  package.json</tspan>
+<tspan x="10" y="9706">582.  2017-04-11 05:27:58 +0000     1213 bytes  tools/git-changelog.sh</tspan>
+<tspan x="10" y="9722">583.  2017-04-11 05:27:58 +0000   272259 bytes  tools/protocol.json</tspan>
+<tspan x="10" y="9738">584.  2017-04-11 05:27:58 +0000     1007 bytes  tools/release.sh</tspan>
+<tspan x="10" y="9754">585.  2017-04-11 05:27:58 +0000      671 bytes  tools/update-front-end.sh</tspan>
+</text>
+</svg>
