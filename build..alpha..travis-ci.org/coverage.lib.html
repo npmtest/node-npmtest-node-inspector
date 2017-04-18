@@ -1,0 +1,1010 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-node-inspector/node_modules/node-inspector/front-end-node/NodeInspectorOverrides.js</title>
+    <meta charset="utf-8">
+    <style>
+        body, html {
+            margin:0; padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica;
+            font-size: 10pt;
+        }
+        div.header, div.footer {
+            background: #eee;
+            padding: 1em;
+        }
+        div.header {
+            height: 160px;
+            padding: 0 1em 0 1em;
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            border-bottom: 1px solid #666;
+            width: 100%;
+        }
+        div.footer {
+            border-top: 1px solid #666;
+        }
+        div.body {
+            margin-top: 170px;
+        }
+        div.meta {
+            font-size: 90%;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-weight: normal;
+        }
+        h1 {
+            font-size: 12pt;
+        }
+        h2 {
+            font-size: 10pt;
+        }
+        pre {
+            font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            tab-size: 2;
+        }
+
+        div.path { font-size: 110%; }
+        div.path a:link, div.path a:visited { color: #000; }
+        table.coverage { border-collapse: collapse; margin:0; padding: 0 }
+
+        table.coverage td {
+            margin: 0;
+            padding: 0;
+            color: #111;
+            vertical-align: top;
+        }
+        table.coverage td.line-count {
+            width: 50px;
+            text-align: right;
+            padding-right: 5px;
+        }
+        table.coverage td.line-coverage {
+            color: #777 !important;
+            text-align: right;
+            border-left: 1px solid #666;
+            border-right: 1px solid #666;
+        }
+
+        table.coverage td.text {
+        }
+
+        table.coverage td span.cline-any {
+            display: inline-block;
+            padding: 0 5px;
+            width: 40px;
+        }
+        table.coverage td span.cline-neutral {
+            background: #eee;
+        }
+        table.coverage td span.cline-yes {
+            background: #b5d592;
+            color: #999;
+        }
+        table.coverage td span.cline-no {
+            background: #fc8c84;
+        }
+
+        .cstat-yes { color: #111; }
+        .cstat-no { background: #fc8c84; color: #111; }
+        .fstat-no { background: #ffc520; color: #111 !important; }
+        .cbranch-no { background:  yellow !important; color: #111; }
+
+        .cstat-skip { background: #ddd; color: #111; }
+        .fstat-skip { background: #ddd; color: #111 !important; }
+        .cbranch-skip { background: #ddd !important; color: #111; }
+
+        .missing-if-branch {
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            padding: 0 4px;
+            background: black;
+            color: yellow;
+        }
+
+        .skip-if-branch {
+            display: none;
+            margin-right: 10px;
+            position: relative;
+            padding: 0 4px;
+            background: #ccc;
+            color: white;
+        }
+
+        .missing-if-branch .typ, .skip-if-branch .typ {
+            color: inherit !important;
+        }
+
+        .entity, .metric { font-weight: bold; }
+        .metric { display: inline-block; border: 1px solid #333; padding: 0.3em; background: white; }
+        .metric small { font-size: 80%; font-weight: normal; color: #666; }
+
+        div.coverage-summary table { border-collapse: collapse; margin: 3em; font-size: 110%; }
+        div.coverage-summary td, div.coverage-summary table  th { margin: 0; padding: 0.25em 1em; border-top: 1px solid #666; border-bottom: 1px solid #666; }
+        div.coverage-summary th { text-align: left; border: 1px solid #666; background: #eee; font-weight: normal; }
+        div.coverage-summary th.file { border-right: none !important; }
+        div.coverage-summary th.pic { border-left: none !important; text-align: right; }
+        div.coverage-summary th.pct { border-right: none !important; }
+        div.coverage-summary th.abs { border-left: none !important; text-align: right; }
+        div.coverage-summary td.pct { text-align: right; border-left: 1px solid #666; }
+        div.coverage-summary td.abs { text-align: right; font-size: 90%; color: #444; border-right: 1px solid #666; }
+        div.coverage-summary td.file { text-align: right; border-left: 1px solid #666; white-space: nowrap;  }
+        div.coverage-summary td.pic { min-width: 120px !important;  }
+        div.coverage-summary a:link { color: #000; }
+        div.coverage-summary a:visited { color: #333; }
+        div.coverage-summary tfoot td { border-top: 1px solid #666; }
+
+        div.coverage-summary .yui3-datatable-sort-indicator, div.coverage-summary .dummy-sort-indicator {
+            height: 10px;
+            width: 7px;
+            display: inline-block;
+            margin-left: 0.5em;
+        }
+        div.coverage-summary .yui3-datatable-sort-indicator {
+            background: no-repeat scroll 0 0 transparent;
+        }
+        div.coverage-summary .yui3-datatable-sorted .yui3-datatable-sort-indicator {
+            background-position: 0 -20px;
+        }
+        div.coverage-summary .yui3-datatable-sorted-desc .yui3-datatable-sort-indicator {
+            background-position: 0 -10px;
+        }
+
+        .high { background: #b5d592 !important; }
+        .medium { background: #ffe87c !important; }
+        .low { background: #fc8c84 !important; }
+
+        span.cover-fill, span.cover-empty {
+            display:inline-block;
+            border:1px solid #444;
+            background: white;
+            height: 12px;
+        }
+        span.cover-fill {
+            background: #ccc;
+            border-right: 1px solid #444;
+        }
+        span.cover-empty {
+            background: white;
+            border-left: none;
+        }
+        span.cover-full {
+            border-right: none !important;
+        }
+        pre.prettyprint {
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .com { color: #999 !important; }
+        .ignore-none { color: #999; font-weight: normal; }
+
+    </style>
+</head>
+<body>
+<div class="header low">
+    <h1 style="font-weight: bold;">
+        <a href="https://github.com/npmtest/node-npmtest-node-inspector">npmtest-node-inspector (v0.0.1)</a>
+    </h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-node-inspector/node_modules/node-inspector/front-end-node/NodeInspectorOverrides.js</span></h1>
+    <h2>
+        
+        Statements: <span class="metric">8.73% <small>(11 / 126)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Branches: <span class="metric">0% <small>(0 / 42)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Functions: <span class="metric">0% <small>(0 / 26)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        
+        Lines: <span class="metric">9.17% <small>(11 / 120)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-node-inspector/node_modules/node-inspector/front-end-node/</a> &#187; NodeInspectorOverrides.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/*jshint browser:true, nonew:false*/
+/*global WebInspector, Runtime, InspectorFrontendHost, InspectorBackend, InspectorBackendClass*/
+WebInspector.NodeInspectorOverrides = <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >  this._overridenStrings = {</span>
+    'Developer Tools - %s': 'Node Inspector - %s',
+    '(no domain)': '(core modules)'
+  };
+<span class="cstat-no" title="statement not covered" >  this._overrideProtocolJsonPath();</span>
+<span class="cstat-no" title="statement not covered" >  this._overrideMainScriptType();</span>
+<span class="cstat-no" title="statement not covered" >  this._overrideUIStrings();</span>
+<span class="cstat-no" title="statement not covered" >  this._overrideWebSocketCreate();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  this._setWorkerTitle();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  this._mergeConnectionQueryParams();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  this._openMainScriptOnStartup();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  this._enableDebuggerUINotifications();</span>
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >WebInspector.NodeInspectorOverrides.prototype = {</span>
+  _overrideProtocolJsonPath: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    InspectorBackend.orig_loadFromJSONIfNeeded = InspectorBackend.loadFromJSONIfNeeded;</span>
+<span class="cstat-no" title="statement not covered" >    InspectorBackend.loadFromJSONIfNeeded = <span class="fstat-no" title="function not covered" >function(url) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (url == '../protocol.json')</span>
+<span class="cstat-no" title="statement not covered" >        return this.orig_loadFromJSONIfNeeded('protocol.json');</span>
+    };
+  },
+  _overrideMainScriptType: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    WebInspector.ResourceTreeModel.prototype.orig_createResourceFromFramePayload =</span>
+      WebInspector.ResourceTreeModel.prototype._createResourceFromFramePayload;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    WebInspector.ResourceTreeModel.prototype._createResourceFromFramePayload =</span>
+<span class="fstat-no" title="function not covered" >      function(frame, url, type, mimeType) {</span>
+        // Force Script type for all node frames.
+        // Front-end assigns Document type (i.e. HTML) to our main script file.
+<span class="cstat-no" title="statement not covered" >        if (frame._isNodeInspectorScript) {</span>
+<span class="cstat-no" title="statement not covered" >          type = WebInspector.resourceTypes.Script;</span>
+        }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        return this.orig_createResourceFromFramePayload(frame, url, type, mimeType);</span>
+      };
+  },
+&nbsp;
+  _overrideUIStrings: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var overridenStrings = this._overridenStrings;</span>
+<span class="cstat-no" title="statement not covered" >    WebInspector.orig_UIString = WebInspector.UIString;</span>
+<span class="cstat-no" title="statement not covered" >    WebInspector.UIString = <span class="fstat-no" title="function not covered" >function(string, vararg) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var args = Array.prototype.slice.call(arguments);</span>
+<span class="cstat-no" title="statement not covered" >      args[0] = overridenStrings[string] || string;</span>
+<span class="cstat-no" title="statement not covered" >      return this.orig_UIString.apply(this, args);</span>
+    };
+  },
+&nbsp;
+  _overrideWebSocketCreate: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    InspectorBackendClass.WebSocketConnection.origCreate =</span>
+      InspectorBackendClass.WebSocketConnection.Create;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    InspectorBackendClass.WebSocketConnection.Create = <span class="fstat-no" title="function not covered" >function(url, onConnectionReady) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var args = Array.prototype.slice.call(arguments);</span>
+      // If front-end is loaded via HTTPS, WebSocket protocol needs to be
+      // changed to WSS. Otherwise the browser will block the connection.
+<span class="cstat-no" title="statement not covered" >      var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';</span>
+<span class="cstat-no" title="statement not covered" >      args[0] = url.replace(/^ws:/, protocol);</span>
+<span class="cstat-no" title="statement not covered" >      this.origCreate.apply(this, args);</span>
+    };
+  },
+&nbsp;
+  _setWorkerTitle: <span class="fstat-no" title="function not covered" >function() {</span>
+    // Front-end uses `eval location.href` to get url of inspected page
+    // This does not work in node.js from obvious reasons, and cause
+    // a 'null' message to be printed in front-end console.
+    // Since Preferences.applicationTitle does not include inspected url,
+    // we can return arbitrary string as inspected URL.
+<span class="cstat-no" title="statement not covered" >    WebInspector.WorkerTargetManager.prototype._calculateWorkerInspectorTitle = <span class="fstat-no" title="function not covered" >function() {</span></span>
+<span class="cstat-no" title="statement not covered" >      InspectorFrontendHost.inspectedURLChanged('');</span>
+    };
+  },
+&nbsp;
+  _openMainScriptOnStartup: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    WebInspector.targetManager.addModelListener(</span>
+      WebInspector.ResourceTreeModel,
+      WebInspector.ResourceTreeModel.EventTypes.CachedResourcesLoaded,
+      showMainAppFile,
+      null
+    );
+  },
+&nbsp;
+  _mergeConnectionQueryParams: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    var params = Runtime._queryParamsObject;</span>
+<span class="cstat-no" title="statement not covered" >    params['port'] = params['port'] || '5858';</span>
+<span class="cstat-no" title="statement not covered" >    params['ws'] = params['ws'] || (location.host + location.pathname);</span>
+<span class="cstat-no" title="statement not covered" >    if (params['host']) {</span>
+<span class="cstat-no" title="statement not covered" >        params['ws'] += /\?/.test(params['ws']) ? '&amp;' : '?';</span>
+<span class="cstat-no" title="statement not covered" >        params['ws'] += 'host=' + params['host'];</span>
+    }
+<span class="cstat-no" title="statement not covered" >    params['ws'] += /\?/.test(params['ws']) ? '&amp;' : '?';</span>
+<span class="cstat-no" title="statement not covered" >    params['ws'] += 'port=' + params['port'];</span>
+  },
+&nbsp;
+  _notifications: [],
+&nbsp;
+  _enableDebuggerUINotifications: <span class="fstat-no" title="function not covered" >function() {</span>
+<span class="cstat-no" title="statement not covered" >    if (!window.Notification) <span class="cstat-no" title="statement not covered" >return;</span></span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function closeAllNotifications() {</span>
+<span class="cstat-no" title="statement not covered" >      this._notifications.forEach(closeNotification);</span>
+<span class="cstat-no" title="statement not covered" >      this._notifications = [];</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function clickOnNotification(event) {</span>
+<span class="cstat-no" title="statement not covered" >      closeNotification(this);</span>
+<span class="cstat-no" title="statement not covered" >      window.focus();</span>
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function closeNotification(notification) {</span>
+<span class="cstat-no" title="statement not covered" >      notification.removeEventListener('click', clickOnNotification);</span>
+<span class="cstat-no" title="statement not covered" >      notification.close();</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    Notification.requestPermission(<span class="fstat-no" title="function not covered" >function (permission) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (permission !== 'granted') <span class="cstat-no" title="statement not covered" >return;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      WebInspector.targetManager.addModelListener(</span>
+        WebInspector.DebuggerModel,
+        WebInspector.DebuggerModel.Events.DebuggerPaused,
+        processDebuggerPaused,
+        this
+      );
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      window.addEventListener('click', closeAllNotifications.bind(this));</span>
+<span class="cstat-no" title="statement not covered" >      window.addEventListener('focus', closeAllNotifications.bind(this));</span>
+    }.bind(this));
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function setMessageTitle(message, reason, currentFrame) {</span>
+<span class="cstat-no" title="statement not covered" >      switch (reason) {</span>
+        case 'exception':
+<span class="cstat-no" title="statement not covered" >          message.title = 'Exception caught';</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        default:
+<span class="cstat-no" title="statement not covered" >          message.title = 'Debugger paused';</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+      }
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function setMessageHeader(message, reason, currentFrame) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!currentFrame) <span class="cstat-no" title="statement not covered" >return;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      switch (reason) {</span>
+        case 'exception':
+<span class="cstat-no" title="statement not covered" >          message.header = 'Exception caught';</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+        default:
+<span class="cstat-no" title="statement not covered" >          message.header = 'Breakpoint caught';</span>
+<span class="cstat-no" title="statement not covered" >          break;</span>
+      }
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function setMessageFrameInfo(message, reason, currentFrame) {</span>
+<span class="cstat-no" title="statement not covered" >      if (!currentFrame) <span class="cstat-no" title="statement not covered" >return;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var lineNumber = currentFrame._location.lineNumber;</span>
+<span class="cstat-no" title="statement not covered" >      var columnNumber = currentFrame._location.columnNumber;</span>
+<span class="cstat-no" title="statement not covered" >      var scriptId = currentFrame._location.scriptId;</span>
+<span class="cstat-no" title="statement not covered" >      var sourceURL = currentFrame._script.sourceURL;</span>
+<span class="cstat-no" title="statement not covered" >      var sourceMapForId = currentFrame._target._sourceMapForScriptId;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (sourceMapForId[scriptId] != null) {</span>
+<span class="cstat-no" title="statement not covered" >        var sourceMapEntry = sourceMapForId[scriptId].findEntry(lineNumber, columnNumber);</span>
+<span class="cstat-no" title="statement not covered" >        sourceURL = sourceMapEntry[2];</span>
+<span class="cstat-no" title="statement not covered" >        lineNumber = sourceMapEntry[3];</span>
+<span class="cstat-no" title="statement not covered" >        columnNumber = sourceMapEntry[4];</span>
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      if (sourceURL) {</span>
+<span class="cstat-no" title="statement not covered" >        sourceURL = sourceURL.substr(sourceURL.lastIndexOf('/')+1);</span>
+      }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      message.frameInfo = ' in module ' +</span>
+        (sourceURL || '(' + scriptId + ')') +
+        ' at line ' + (lineNumber + 1) +
+        ' column ' + columnNumber;
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function processDebuggerPaused(event) {</span>
+<span class="cstat-no" title="statement not covered" >      if (document.hasFocus()) <span class="cstat-no" title="statement not covered" >return;</span></span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var reason = event.data.reason;</span>
+<span class="cstat-no" title="statement not covered" >      var currentFrame = event.data.callFrames[0];</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var message = {</span>
+        title: '',
+        header: '',
+        frameInfo: ''
+      };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      setMessageTitle(message, reason, currentFrame);</span>
+<span class="cstat-no" title="statement not covered" >      setMessageHeader(message, reason, currentFrame);</span>
+<span class="cstat-no" title="statement not covered" >      setMessageFrameInfo(message, reason, currentFrame);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      var notification = new Notification(message.title, {</span>
+        tag: location.href,
+        body: [
+          message.header,
+          message.frameInfo
+        ].join(''),
+        icon: 'favicon.ico'
+      });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      notification.addEventListener('click', clickOnNotification);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      this._notifications.push(notification);</span>
+    }
+  }
+};
+&nbsp;
+<span class="cstat-no" title="statement not covered" >new WebInspector.NodeInspectorOverrides();</span>
+&nbsp;
+&nbsp;
+<span class="fstat-no" title="function not covered" >function showMainAppFile() {</span>
+<span class="cstat-no" title="statement not covered" >  WebInspector.inspectorView.showPanel('sources').then(<span class="fstat-no" title="function not covered" >function(panel) {</span></span>
+<span class="cstat-no" title="statement not covered" >    var fileTabs = panel._sourcesView._editorContainer._files;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    if (Object.keys(fileTabs).length &gt; 0){</span>
+      // Some files are already opened - do not change user's workspace
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    var uiSourceCodes = getAllUiSourceCodes();</span>
+<span class="cstat-no" title="statement not covered" >    var uriToShow = WebInspector.inspectedPageURL;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    for (var i in uiSourceCodes) {</span>
+<span class="cstat-no" title="statement not covered" >      if (uiSourceCodes[i].url !== uriToShow) <span class="cstat-no" title="statement not covered" >continue;</span></span>
+<span class="cstat-no" title="statement not covered" >      panel.showUISourceCode(uiSourceCodes[i]);</span>
+<span class="cstat-no" title="statement not covered" >      return true;</span>
+    }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    console.error('Cannot show the main application file ', uriToShow);</span>
+  });
+}
+&nbsp;
+<span class="fstat-no" title="function not covered" >function getAllUiSourceCodes() {</span>
+  // Based on FilteredItemSectionDialog.js &gt; SelectUISourceCodeDialog()
+<span class="cstat-no" title="statement not covered" >  var projects = WebInspector.workspace.projects();</span>
+<span class="cstat-no" title="statement not covered" >  var uiSourceCodes = [];</span>
+<span class="cstat-no" title="statement not covered" >  var projectFiles;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  for (var i = 0; i &lt; projects.length; ++i) {</span>
+<span class="cstat-no" title="statement not covered" >    projectFiles = projects[i]</span>
+      .uiSourceCodes()
+      .filter(nameIsNotEmpty);
+<span class="cstat-no" title="statement not covered" >    uiSourceCodes = uiSourceCodes.concat(projectFiles);</span>
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return uiSourceCodes;</span>
+&nbsp;
+<span class="fstat-no" title="function not covered" >  function nameIsNotEmpty(p) {</span>
+<span class="cstat-no" title="statement not covered" >    return p.name();</span>
+  }
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 15:23:22 GMT+0000 (UTC)</div>
+</div>
+</body>
+</html>
