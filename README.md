@@ -1,6 +1,6 @@
 # npmtest-node-inspector
 
-#### test coverage for  [node-inspector (v1.1.0)](http://github.com/node-inspector/node-inspector)  [![npm package](https://img.shields.io/npm/v/npmtest-node-inspector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-inspector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-inspector.svg)](https://travis-ci.org/npmtest/node-npmtest-node-inspector)
+#### basic test coverage for  [node-inspector (v1.1.1)](http://github.com/node-inspector/node-inspector)  [![npm package](https://img.shields.io/npm/v/npmtest-node-inspector.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-node-inspector) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-node-inspector.svg)](https://travis-ci.org/npmtest/node-npmtest-node-inspector)
 
 #### Web Inspector based nodeJS debugger
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-node-inspector/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-node-inspector/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-node-inspector/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-node-inspector/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-inspector/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-inspector/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-node-inspector/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-node-inspector/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-node-inspector/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-node-inspector/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-node-inspector/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-node-inspector/build/coverage.html/index.html)
 
@@ -75,13 +75,13 @@
     },
     "directories": {},
     "dist": {
-        "shasum": "0f8ffffbf9a9b86540eb33c1d64e7ba546457622",
-        "tarball": "https://registry.npmjs.org/node-inspector/-/node-inspector-1.1.0.tgz"
+        "shasum": "e7851eb973f380543c058db564a9812055eac640",
+        "tarball": "https://registry.npmjs.org/node-inspector/-/node-inspector-1.1.1.tgz"
     },
     "engines": {
         "node": ">=0.8.0"
     },
-    "gitHead": "624e6916ed51708fe32ff0dca644d46adefba312",
+    "gitHead": "0ce3a01328802d0f74acde5a416277393427e7e1",
     "homepage": "http://github.com/node-inspector/node-inspector",
     "keywords": [
         "debug",
@@ -121,7 +121,7 @@
         "pretest": "jshint .",
         "test": "mocha"
     },
-    "version": "1.1.0"
+    "version": "1.1.1"
 }
 ```
 
